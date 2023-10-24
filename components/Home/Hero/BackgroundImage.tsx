@@ -17,7 +17,7 @@ const BackgroundImageHero = ({
 }: Props) => {
   return (
     <div
-      className="mt-12 h-[38rem] w-full bg-cover bg-center object-cover"
+      className="mt-12 h-[28rem] w-full bg-cover bg-center object-cover"
       style={{
         background: 'radial-gradient(circle at 40% 30%,#dbeafe,#d6dee4)',
       }}

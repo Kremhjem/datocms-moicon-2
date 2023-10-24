@@ -17,14 +17,15 @@ const BackgroundImageHero = ({
 }: Props) => {
   return (
     <div
-      className="mt-20 h-[48rem] w-full bg-cover bg-center object-cover"
+      className="mt-12 h-[38rem] w-full bg-cover bg-center object-cover"
       style={{
         background: 'radial-gradient(circle at 40% 30%,#dbeafe,#d6dee4)',
       }}
     >
       <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-r px-8 lg:px-32 bg-cover bg-center object-cover"
            style={{
-             backgroundSize: 'cover',
+             backgroundSize: 'contain',
+             backgroundRepeat: 'no-repeat',
              backgroundImage: `url('${image?.responsiveImage?.src}')`,
            }}
       >

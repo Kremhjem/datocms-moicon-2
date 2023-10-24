@@ -17,13 +17,13 @@ const BackgroundImageHero = ({
 }: Props) => {
   return (
     <div
-      className="mt-20 h-[48rem] w-full bg-cover bg-center object-cover"
-      style={{
-        backgroundSize: 'cover',
-        backgroundImage: `url('${image?.responsiveImage?.src}')`,
-      }}
-    >
-      <div className="flex h-full w-full flex-col items-center justify-center bg-gray-900/30 px-8 lg:px-32">
+      className="mt-20 h-[48rem] w-full bg-cover bg-center object-cover">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-r from-gray-200 from-10% via-blue-100 via-30% to-gray-200 to-90% px-8 lg:px-32 bg-cover bg-center object-cover"
+           style={{
+             backgroundSize: 'cover',
+             backgroundImage: `url('${image?.responsiveImage?.src}')`,
+           }}
+      >
         <div className="flex flex-col items-center gap-8 text-center">
           <h1 className="text-7xl font-bold text-white">{heroTitle}</h1>
           <div className="leading-relaxed text-white xl:text-xl">

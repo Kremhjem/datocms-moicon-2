@@ -17,7 +17,7 @@ const NotificationStrip = ({
   setNotificationStrip,
 }: Props) => {
   return (
-    <div className="bg-primary px-4 py-3 text-white">
+    <div className="bg-primary px-4 py-3 text-white relative z-50">
       <div className="text-center text-sm font-medium">
         <StructuredText
           data={notification.value}

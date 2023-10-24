@@ -95,10 +95,10 @@ const Header = ({ lng, data }: Props) => {
         />
       )}
       <header
-        className={`header left-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header left-0 z-40 flex w-full items-center bg-menugray ${
           sticky
             ? 'fixed top-0 z-50 bg-white bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
-            : `absolute ${notificationStrip ? 'top-4' : 'top-0'}`
+            : `absolute ${notificationStrip ? 'top-11' : 'top-0'}`
         }`}
       >
         <div className="container">
@@ -107,15 +107,15 @@ const Header = ({ lng, data }: Props) => {
               <Link
                 href={'/' + lng}
                 className={`header-logo block w-full ${
-                  sticky ? 'py-5 lg:py-2' : 'py-8'
+                  sticky ? 'py-5 lg:py-2' : 'py-1'
                 } `}
               >
                 {data.layout?.logo.url && (
                   <Image
                     src={data.layout.logo.url}
                     alt="logo"
-                    width={140}
-                    height={30}
+                    width={500}
+                    height={140}
                     className="w-full dark:hidden"
                   />
                 )}
@@ -159,7 +159,7 @@ const Header = ({ lng, data }: Props) => {
                         {menuItem.path ? (
                           <Link
                             href={'/' + lng + menuItem.path}
-                            className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
+                            className={`flex py-2 text-base text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
                           >
                             {menuItem.title}
                           </Link>
@@ -167,7 +167,7 @@ const Header = ({ lng, data }: Props) => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">

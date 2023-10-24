@@ -34,6 +34,8 @@ module.exports = {
       colors: {
         current: 'currentColor',
         transparent: 'transparent',
+        menugray: '#2e2e2e',
+        hero: '#4a4a55',
         white: '#FFFFFF',
         black: '#090E34',
         dark: '#1D2144',
@@ -46,7 +48,19 @@ module.exports = {
         one: '0px 2px 3px rgba(7, 7, 77, 0.05)',
         sticky: 'inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)',
       },
+      backgroundImage: {
+        'custom-gradient': "radial-gradient(64.14% 72.25% at 47.58% 31.75%, rgba(113,120,127,.52) 0%, rgba(255,255,255,0) 100%), linear-gradient(92.4deg, #26292c 14.67%, rgba(0,0,0,.48) 54.37%, rgba(26,34,40,.62) 92.49%), linear-gradient(#e3e6e8, #203746)",
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.custom-filter': {
+          '-webkit-filter': 'invert(4) brightness(1.2)',
+          'filter': 'invert(4) brightness(1.2)',
+        },
+      })
+    },
+  ],
+}

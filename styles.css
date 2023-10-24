@@ -1,0 +1,4 @@
+.custom-filter {
+    -webkit-filter: invert(4) brightness(1.2);
+    filter: invert(4) brightness(1.2);
+}

@@ -17,21 +17,17 @@ const BackgroundImageHero = ({
 }: Props) => {
   return (
     <div
-      className="mt-12 h-[24rem] w-full bg-cover bg-center object-cover"
-      style={{
-        background: 'radial-gradient(circle at 40% 30%,#dbeafe,#d6dee4)',
-      }}
-    >
-      <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-r px-8 lg:px-32 bg-cover bg-center object-cover absolute top-0"
+      className="mt-12 h-[24rem] w-full bg-cover bg-center object-cover bg-custom-gradient">
+      <div className="flex h-full w-full flex-col items-start justify-center px-8 lg:px-48 bg-center object-cover absolute top-0"
            style={{
              backgroundSize: 'contain',
              backgroundRepeat: 'no-repeat',
              backgroundImage: `url('${image?.responsiveImage?.src}')`,
            }}
       >
-        <div className="flex flex-col items-start gap-8 text-left">
-          <h1 className="text-7xl font-bold text-gray-700">{heroTitle}</h1>
-          <div className="leading-relaxed text-white xl:text-xl">
+        <div className="flex flex-col gap-8 relative bottom-24">
+          <h1 className="text-7xl font-bold text-hero custom-filter">{heroTitle}</h1>
+          <div className="leading-relaxed text-gray-300 xl:text-xl">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex gap-4">

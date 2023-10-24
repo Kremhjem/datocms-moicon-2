@@ -29,8 +29,8 @@ const BackgroundImageHero = ({
              backgroundImage: `url('${image?.responsiveImage?.src}')`,
            }}
       >
-        <div className="flex flex-col items-center gap-8 text-center">
-          <h1 className="text-7xl font-bold text-white">{heroTitle}</h1>
+        <div className="flex flex-col items-center gap-8 text-left">
+          <h1 className="text-7xl font-bold text-gray-700">{heroTitle}</h1>
           <div className="leading-relaxed text-white xl:text-xl">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>

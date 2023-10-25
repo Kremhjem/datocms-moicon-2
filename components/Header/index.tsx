@@ -103,7 +103,7 @@ const Header = ({ lng, data }: Props) => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-60 max-w-full px-4 xl:mr-12 xl:py-0 py-2">
               <Link
                 href={'/' + lng}
                 className={`header-logo block w-full ${

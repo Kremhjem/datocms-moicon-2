@@ -26,7 +26,7 @@ const BackgroundImageHero = ({
            }}
       >
         <div className="flex flex-col gap-4 relative bottom-28">
-          <h1 className="text-7-75xl font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
+          <h1 className="sm:text-7-75xl text-5xl-inherit font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
           <div className="leading-relaxed text-gray-300 xl:text-3xl max-w-md lowercase">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>

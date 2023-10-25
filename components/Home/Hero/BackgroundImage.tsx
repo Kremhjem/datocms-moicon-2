@@ -25,17 +25,17 @@ const BackgroundImageHero = ({
              backgroundImage: `url('${image?.responsiveImage?.src}')`,
            }}
       >
-        <div className="flex flex-col gap-6 relative bottom-24">
-          <h1 className="text-7-5xl font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
+        <div className="flex flex-col gap-4 relative bottom-28">
+          <h1 className="text-7-75xl font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
           <div className="leading-relaxed text-gray-300 xl:text-3xl max-w-md lowercase">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex gap-4">
             {buttons.map((button) => {
               const primary =
-                'inline-block rounded-lg bg-primary/90 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base';
+                'inline-block rounded-md bg-primary/90 px-4 py-3 lowercase text-center text-sm font-medium text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base-none';
               const secondary =
-                'inline-block rounded-lg bg-secondarybtn px-8 py-3 text-center text-sm font-semibold text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base';
+                'inline-block rounded-md bg-secondarybtn px-4 py-3 lowercase text-center text-sm font-medium text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base-none';
               return (
                 <a
                   key={button.id}

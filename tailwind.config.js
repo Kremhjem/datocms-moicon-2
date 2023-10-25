@@ -62,7 +62,8 @@ module.exports = {
         'white-10': '#3a3a3a',
       },
       fontSize: {
-        '7-5xl': '5.5rem',
+        '7-75xl': '5.75rem',
+        'base-none': ['1rem', '0.6'],
       },
       letterSpacing: {
         widester: '0.15em',

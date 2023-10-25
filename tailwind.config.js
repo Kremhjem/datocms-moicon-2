@@ -35,8 +35,11 @@ module.exports = {
         current: 'currentColor',
         transparent: 'transparent',
         menugray: '#2e2e2e',
+        language: '#242424',
+        languagecolor: '#a6a6a6',
         graysplitbg: '#383838',
         darksplitbg: '#1a1a1a',
+        secondarybtn: '#666',
         cardbg: '#212121',
         hero: '#4a4a55',
         h1title: '#e6e6e6',
@@ -54,6 +57,15 @@ module.exports = {
       },
       backgroundImage: {
         'custom-gradient': "radial-gradient(64.14% 72.25% at 47.58% 31.75%, rgba(113,120,127,.52) 0%, rgba(255,255,255,0) 100%), linear-gradient(92.4deg, #26292c 14.67%, rgba(0,0,0,.48) 54.37%, rgba(26,34,40,.62) 92.49%), linear-gradient(#e3e6e8, #203746)",
+      },
+      borderColor: {
+        'white-10': '#3a3a3a',
+      },
+      fontSize: {
+        '7-5xl': '5.5rem',
+      },
+      letterSpacing: {
+        widester: '0.15em',
       },
     },
   },

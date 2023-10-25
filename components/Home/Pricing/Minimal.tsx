@@ -121,7 +121,7 @@ const Minimal = ({ header, subheader, plans }: Props) => {
 
                 <h4 className="mt-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
                   ${isMonthly ? plan.monthlyPrice : plan.yearlyPrice}{' '}
-                  <span className="text-base font-normal text-gray-600 dark:text-gray-400">
+                  <span className="text-base font-normal text-gray-300 dark:text-gray-400">
                     / {isMonthly ? 'Month' : 'Year'}
                   </span>
                 </h4>

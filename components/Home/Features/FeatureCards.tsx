@@ -25,7 +25,7 @@ const FeatureCards = ({
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
+          <div className="mx-auto max-w-3xl pb-12 md:pb-20">
             <h1 className="mb-4 text-3xl font-bold !leading-tight text-h1title dark:text-white sm:text-4xl md:text-[45px]">
               {featuresHeader}
             </h1>
@@ -52,10 +52,10 @@ const FeatureCards = ({
                       objectPosition="50% 50%"
                     />
                   </div>
-                  <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+                  <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight text-h1title">
                     {feature.featureTitle}
                   </h4>
-                  <div className="text-center text-gray-600">
+                  <div className="text-center text-gray-300">
                     <ReactMarkdown>
                       {feature.featureDescription || ''}
                     </ReactMarkdown>

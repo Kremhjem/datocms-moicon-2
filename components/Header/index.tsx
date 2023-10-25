@@ -159,7 +159,7 @@ const Header = ({ lng, data }: Props) => {
                         {menuItem.path ? (
                           <Link
                             href={'/' + lng + menuItem.path}
-                            className={`flex py-2 text-base text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
+                            className={`flex py-2 text-sm text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
                           >
                             {menuItem.title}
                           </Link>
@@ -167,7 +167,7 @@ const Header = ({ lng, data }: Props) => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-0"
+                              className="flex cursor-pointer items-center justify-between py-2 text-sm text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">

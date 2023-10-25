@@ -72,7 +72,7 @@ const GradientHero = ({ heroTitle, heroSubtitle, buttons }: Props) => {
             </h1>
             <div className="mx-auto max-w-3xl">
               <div
-                className="mb-8 text-xl text-gray-600"
+                className="mb-8 text-xl text-gray-300"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >

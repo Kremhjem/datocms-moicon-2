@@ -58,7 +58,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
 
                 <div className="-mx-2 mt-4 flex">
                   <div
-                    className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
                     aria-label="Reddit"
                   >
                     <svg
@@ -72,7 +72,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
                     aria-label="Facebook"
                   >
                     <svg
@@ -86,7 +86,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
                     aria-label="Github"
                   >
                     <svg

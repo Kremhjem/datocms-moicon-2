@@ -69,6 +69,9 @@ module.exports = {
       letterSpacing: {
         widester: '0.15em',
       },
+      padding: {
+        '61': '14.6rem',
+      },
     },
   },
   plugins: [

@@ -18,7 +18,7 @@ const BackgroundImageHero = ({
   return (
     <div
       className="mt-12 h-[24rem] w-full bg-cover bg-center object-cover bg-custom-gradient">
-      <div className="flex h-full w-full flex-col items-start justify-center px-8 lg:px-64 bg-center object-cover absolute top-0 z-10"
+      <div className="flex h-full w-full flex-col items-start justify-center px-8 lg:px-61 bg-center object-cover absolute top-0 z-10"
            style={{
              backgroundSize: 'contain',
              backgroundRepeat: 'no-repeat',

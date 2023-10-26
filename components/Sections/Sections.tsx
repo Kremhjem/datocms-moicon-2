@@ -199,9 +199,9 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             const brandSectionRecord = section as BrandSectionRecord;
             switch (brandSectionRecord.displayOptions) {
               case 'brand_cards':
-                return <BrandCards brandSectionShowcase={brandSectionRecord} />;
+                return <BrandCards brandShowcase={brandSectionRecord.brand} />;
               default:
-                return <Brands brandSectionShowcase={brandSectionRecord} />;
+                return <Brands brandShowcase={brandSectionRecord.brand} />;
             }
           case 'detail_section':
             const detailSectionRecord = section as DetailSectionRecord;

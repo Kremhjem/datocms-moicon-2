@@ -13,7 +13,7 @@ const BrandCards = ({ brandShowcase }: Props) => {
             Loved by manufacturers
         </div>
         <div className="max-w-md text-base !leading-relaxed text-h1subtitle md:text-md">
-            We're proud that Moicon was voted the Community Spotlight Award by Autodesk in one survey. We think you'll love it too.
+            We are proud that Moicon was voted the Community Spotlight Award by Autodesk in one survey. We think you will love it too.
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {brandShowcase.map((brand) => {

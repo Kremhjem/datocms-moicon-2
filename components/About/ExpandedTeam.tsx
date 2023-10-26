@@ -19,7 +19,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
           {header}
         </h1>
 
-        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-gray-300">
+        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-h1subtitle">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 
@@ -32,7 +32,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                 className=" group transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300 hover:border-transparent hover:bg-primary/90 hover:opacity-95 dark:border-gray-700 dark:hover:border-transparent"
               >
                 <div className="flex flex-col items-center sm:-mx-4 sm:flex-row">
-                  <div className="relative z-50 h-24 w-24 flex-shrink-0 overflow-hidden rounded-full object-cover ring-4 ring-gray-300 sm:mx-4">
+                  <div className="relative z-50 h-24 w-24 flex-shrink-0 overflow-hidden rounded-full object-cover ring-4 ring-h1subtitle sm:mx-4">
                     <DatoImage
                       layout="fill"
                       objectFit="cover"
@@ -52,13 +52,13 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
                 </div>
 
-                <p className="mt-4 capitalize text-gray-500 group-hover:text-white dark:text-gray-300">
+                <p className="mt-4 capitalize text-gray-500 group-hover:text-white dark:text-h1subtitle">
                   {member.description}
                 </p>
 
                 <div className="-mx-2 mt-4 flex">
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Reddit"
                   >
                     <svg
@@ -72,7 +72,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Facebook"
                   >
                     <svg
@@ -86,7 +86,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Github"
                   >
                     <svg

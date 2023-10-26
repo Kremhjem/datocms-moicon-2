@@ -28,7 +28,7 @@ const CTABlock = ({ title, subtitle, buttonLabel, image }: Props) => {
               {title}
             </h2>
 
-            <div className="text-m mb-8 max-w-md text-gray-300">
+            <div className="text-m mb-8 max-w-md text-h1subtitle">
               <ReactMarkdown>{subtitle || ''}</ReactMarkdown>
             </div>
 

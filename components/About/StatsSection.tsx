@@ -21,7 +21,7 @@ type Props = {
 
 const StatsSection = ({ title, subtitle, statistic }: Props) => {
   return (
-    <section className="body-font flex flex-col items-center justify-center text-gray-300">
+    <section className="body-font flex flex-col items-center justify-center text-h1subtitle">
       <div className="container mx-auto px-5 py-4 md:py-12">
         <div className="flex w-full flex-col pb-12 text-center">
           <h1 className="title-font mb-4 text-2xl font-semibold text-gray-900 sm:text-4xl">

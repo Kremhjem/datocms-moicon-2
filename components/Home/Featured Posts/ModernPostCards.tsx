@@ -53,7 +53,7 @@ const ModernPostCards = ({
                     {post.title}
                   </Link>
 
-                  <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                  <p className="mt-3 text-sm text-gray-500 dark:text-h1subtitle md:text-sm">
                     {post.seoTags?.description}
                   </p>
 

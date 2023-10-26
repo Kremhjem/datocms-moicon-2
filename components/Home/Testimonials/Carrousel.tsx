@@ -49,7 +49,7 @@ const Carrousel = ({ reviews, header, subheader }: Props) => {
                 <p className="text-xl font-medium tracking-tight text-white">
                   {currentReview.reviewerName}
                 </p>
-                <p className="text-gray-300 ">{currentReview.reviewerTitle}</p>
+                <p className="text-h1subtitle ">{currentReview.reviewerTitle}</p>
               </div>
 
               <div className="mt-4 text-lg leading-relaxed text-white md:text-xl">

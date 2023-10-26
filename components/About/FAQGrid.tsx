@@ -47,7 +47,7 @@ const FAQGrid = ({ title, subtitle, questions }: Props) => {
                     {question.question}
                   </h1>
 
-                  <div className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                  <div className="mt-2 text-sm text-gray-500 dark:text-h1subtitle">
                     <StructuredText
                       data={question.answer.value}
                       renderNode={Highlighter}

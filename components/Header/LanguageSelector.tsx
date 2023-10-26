@@ -30,7 +30,7 @@ const LanguageSelector = ({ lng, languages }: Props) => {
             setIsOpen(false);
           }, 100)
         }
-        className="ml-4 inline-flex w-28 items-center overflow-hidden rounded-md bg-language transition duration-100 hover:border-h1title active:scale-95 active:bg-gray-300 border-solid border border-white-10"
+        className="ml-4 inline-flex w-28 items-center overflow-hidden rounded-md bg-language transition duration-100 hover:border-h1title active:scale-95 active:bg-h1subtitle border-solid border border-white-10"
       >
         <button className="inline-flex cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-languagecolor">
           {getLangNameFromCode(currentLocale)?.name || currentLocale}

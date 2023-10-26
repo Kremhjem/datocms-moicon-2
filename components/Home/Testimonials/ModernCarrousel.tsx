@@ -60,7 +60,7 @@ const ModernCarrousel = ({ reviews, header, subheader }: Props) => {
               <h3 className="mt-6 text-lg font-medium text-primary">
                 {currentReview.reviewerName}
               </h3>
-              <p className="text-gray-300 dark:text-gray-300">
+              <p className="text-h1subtitle dark:text-h1subtitle">
                 {currentReview.reviewerTitle}
               </p>
             </div>

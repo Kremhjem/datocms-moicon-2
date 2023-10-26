@@ -38,7 +38,7 @@ const MinimalCardsFeature = ({
               {feature.featureTitle}
             </h2>
 
-            <div className="mt-2 text-sm text-gray-300 dark:text-gray-200">
+            <div className="mt-2 text-sm text-h1subtitle dark:text-gray-200">
               <ReactMarkdown>{feature.featureDescription || ''}</ReactMarkdown>
             </div>
           </div>

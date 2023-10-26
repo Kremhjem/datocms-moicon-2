@@ -96,7 +96,7 @@ const GradientCards = ({ header, subheader, plans }: Props) => {
                     <h3 className="text-2xl font-semibold text-gray-100 sm:text-3xl">
                       {plan.tierName}
                     </h3>
-                    <div className="h-24 text-gray-300">
+                    <div className="h-24 text-h1subtitle">
                       <StructuredText
                         data={plan.tierDescription.value}
                         renderNode={Highlighter}
@@ -111,7 +111,7 @@ const GradientCards = ({ header, subheader, plans }: Props) => {
                   </div>
                 </div>
 
-                <ul className="mb-6 h-96 space-y-2 text-gray-300">
+                <ul className="mb-6 h-96 space-y-2 text-h1subtitle">
                   {planFeatures.map((feature) => {
                     return (
                       <li key={feature} className="flex items-center gap-1.5">
@@ -136,7 +136,7 @@ const GradientCards = ({ header, subheader, plans }: Props) => {
 
                 <a
                   href="#"
-                  className="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base"
+                  className="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-h1subtitle md:text-base"
                 >
                   Get the Basic Bundle
                 </a>

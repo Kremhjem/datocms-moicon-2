@@ -43,6 +43,7 @@ module.exports = {
         cardbg: '#212121',
         hero: '#4a4a55',
         h1title: '#e6e6e6',
+        h1subtitle: '#ccc',
         white: '#FFFFFF',
         black: '#090E34',
         dark: '#1D2144',

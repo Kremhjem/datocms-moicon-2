@@ -19,7 +19,7 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
           {header}
         </h1>
 
-        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-gray-300">
+        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-h1subtitle">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 
@@ -31,7 +31,7 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
                 key={member.id}
                 className="group flex transform flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-primary/90"
               >
-                <div className="relative h-32 w-32 overflow-hidden rounded-full object-cover ring-4 ring-gray-300">
+                <div className="relative h-32 w-32 overflow-hidden rounded-full object-cover ring-4 ring-h1subtitle">
                   <DatoImage
                     layout="fill"
                     objectFit="cover"
@@ -44,13 +44,13 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
                   {member.name}
                 </h1>
 
-                <p className="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+                <p className="mt-2 capitalize text-gray-500 group-hover:text-h1subtitle dark:text-h1subtitle">
                   {member.bio}
                 </p>
 
                 <div className="-mx-2 mt-3 flex">
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Reddit"
                   >
                     <svg
@@ -64,7 +64,7 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Facebook"
                   >
                     <svg
@@ -78,7 +78,7 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div
-                    className="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+                    className="mx-2 text-h1subtitle hover:text-gray-500 group-hover:text-white dark:text-h1subtitle dark:hover:text-h1subtitle"
                     aria-label="Github"
                   >
                     <svg

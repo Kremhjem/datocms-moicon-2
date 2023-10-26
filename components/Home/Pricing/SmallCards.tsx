@@ -16,7 +16,7 @@ const SmallCards = ({ header, subheader, plans }: Props) => {
           {header}
         </h1>
 
-        <div className="mx-auto mt-4 max-w-2xl text-center text-gray-500 dark:text-gray-300 xl:mt-6">
+        <div className="mx-auto mt-4 max-w-2xl text-center text-gray-500 dark:text-h1subtitle xl:mt-6">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 
@@ -27,7 +27,7 @@ const SmallCards = ({ header, subheader, plans }: Props) => {
                 key={plan.id}
                 className="w-full space-y-8 rounded-lg border border-gray-200 p-8 text-center dark:border-gray-700"
               >
-                <p className="font-medium uppercase text-gray-500 dark:text-gray-300">
+                <p className="font-medium uppercase text-gray-500 dark:text-h1subtitle">
                   {plan.tierName}
                 </p>
 
@@ -35,7 +35,7 @@ const SmallCards = ({ header, subheader, plans }: Props) => {
                   ${plan.monthlyPrice}
                 </h2>
 
-                <p className="font-medium text-gray-500 dark:text-gray-300">
+                <p className="font-medium text-gray-500 dark:text-h1subtitle">
                   Per month
                 </p>
 

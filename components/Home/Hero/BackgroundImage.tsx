@@ -27,7 +27,7 @@ const BackgroundImageHero = ({
       >
         <div className="flex flex-col gap-4 relative bottom-28">
           <h1 className="sm:text-7-75xl text-5xl-inherit font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
-          <div className="leading-relaxed text-gray-300 xl:text-3xl max-w-md lowercase">
+          <div className="leading-relaxed text-h1subtitle xl:text-3xl max-w-md lowercase">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex gap-4">
@@ -35,7 +35,7 @@ const BackgroundImageHero = ({
               const primary =
                 'inline-block rounded-md bg-primary/90 px-4 py-3 lowercase text-center text-sm font-medium text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base-none';
               const secondary =
-                'inline-block rounded-md bg-secondarybtn px-4 py-3 lowercase text-center text-sm font-medium text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base-none';
+                'inline-block rounded-md bg-secondarybtn px-4 py-3 lowercase text-center text-sm font-medium text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-h1subtitle focus-visible:ring active:text-gray-700 md:text-base-none';
               return (
                 <a
                   key={button.id}

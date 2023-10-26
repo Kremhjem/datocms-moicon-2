@@ -23,7 +23,7 @@ const FeatureCards = ({
       ></div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="py-12 md:pt-28 md:pb-20">
           {/* Items */}
           <div className="mx-auto grid max-w-sm items-start gap-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
@@ -31,7 +31,7 @@ const FeatureCards = ({
               return (
                 <div
                   key={feature.id}
-                  className="relative flex h-64 flex-col items-start justify-center p-6"
+                  className="relative flex h-72 flex-col items-start p-6"
                 >
                   <div className="hidden relative -mt-1 mb-2 flex h-20 w-20 items-start justify-center overflow-hidden rounded-full bg-primary bg-opacity-5">
                     <DatoImage
@@ -45,7 +45,7 @@ const FeatureCards = ({
                   <h4 className="mb-1 text-3xl font-light leading-snug tracking-tight text-h1title lowercase">
                     {feature.featureTitle}
                   </h4>
-                  <div className="text-gray-300">
+                  <div className="text-h1subtitle">
                     <ReactMarkdown>
                       {feature.featureDescription || ''}
                     </ReactMarkdown>
@@ -55,11 +55,11 @@ const FeatureCards = ({
             })}
           </div>
             {/* Section header */}
-            <div className="mx-auto max-w-3xl pt-12 md:pt-20">
-                <h1 className="mb-4 text-3xl text-center font-bold !leading-tight text-h1title dark:text-white sm:text-4xl md:text-[45px]">
+            <div className="inline-block justify-start pl-4 max-w-3xl pt-12 md:pt-0">
+                <h1 className="mb-4 text-3xl font-bold !leading-tight text-h1title dark:text-white sm:text-4xl md:text-[45px]">
                     {featuresHeader}
                 </h1>
-                <div className="text-xl text-gray-300">
+                <div className="text-xl text-h1subtitle">
                     <ReactMarkdown>{featuresSubheader || ''}</ReactMarkdown>
                 </div>
             </div>

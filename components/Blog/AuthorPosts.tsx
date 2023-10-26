@@ -31,7 +31,7 @@ const AuthorPosts = ({ data, lng }: Props) => {
               </h1>
               <p className="text-base text-body-color">{data.author.bio}</p>
 
-              <div className="mt-4 max-w-2xl text-gray-500 dark:text-gray-300">
+              <div className="mt-4 max-w-2xl text-gray-500 dark:text-h1subtitle">
                 <ReactMarkdown>{data.author.description}</ReactMarkdown>
               </div>
             </div>

@@ -26,7 +26,7 @@ const FeatureListSelector = ({ header, subheader, plans }: Props) => {
           {header}
         </h1>
 
-        <div className="mx-auto mt-4 max-w-2xl text-center text-gray-500 dark:text-gray-300 xl:mt-6">
+        <div className="mx-auto mt-4 max-w-2xl text-center text-gray-500 dark:text-h1subtitle xl:mt-6">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 

@@ -43,7 +43,7 @@ const SuccessPopUp = ({ setSuccessToast }: Props) => {
           onClick={() => {
             setSuccessToast(false);
           }}
-          className="text-gray-500 transition hover:text-gray-300"
+          className="text-gray-500 transition hover:text-h1subtitle"
         >
           <span className="sr-only">Dismiss popup</span>
 

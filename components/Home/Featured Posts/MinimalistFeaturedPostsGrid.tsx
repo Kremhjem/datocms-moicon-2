@@ -47,7 +47,7 @@ const MinimalistFeaturedPostsGrid = ({
                     {post.title}
                   </Link>
 
-                  <span className="text-sm text-gray-500 dark:text-gray-300">
+                  <span className="text-sm text-gray-500 dark:text-h1subtitle">
                     {transformDate(post._publishedAt)}
                   </span>
                 </div>

@@ -16,7 +16,7 @@ const CTAAppBlock = ({ title, text, googleURL, appleURL }: Props) => {
           {title}
         </h2>
 
-        <div className="mt-4 block max-w-4xl text-gray-500 dark:text-gray-300">
+        <div className="mt-4 block max-w-4xl text-gray-500 dark:text-h1subtitle">
           <ReactMarkdown>{text || ''}</ReactMarkdown>
         </div>
 
@@ -24,7 +24,7 @@ const CTAAppBlock = ({ title, text, googleURL, appleURL }: Props) => {
           {appleURL && (
             <a
               href={appleURL}
-              className="inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-gray-900 px-4 py-2.5 text-sm text-white shadow transition-colors duration-300 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 dark:bg-gray-800 dark:hover:bg-gray-700 sm:mx-2 sm:w-auto"
+              className="inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-gray-900 px-4 py-2.5 text-sm text-white shadow transition-colors duration-300 hover:bg-gray-700 focus:ring focus:ring-h1subtitle focus:ring-opacity-80 dark:bg-gray-800 dark:hover:bg-gray-700 sm:mx-2 sm:w-auto"
             >
               <svg
                 className="mx-2 h-5 w-5 fill-current"

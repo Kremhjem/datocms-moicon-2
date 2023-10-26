@@ -75,7 +75,7 @@ const Minimal = ({ header, subheader, plans }: Props) => {
               </span>
             </h4>
 
-            <div className="mt-4 h-24 text-gray-300">
+            <div className="mt-4 h-24 text-h1subtitle">
               <StructuredText
                 data={planInEvidence.tierDescription.value}
                 renderNode={Highlighter}
@@ -99,7 +99,7 @@ const Minimal = ({ header, subheader, plans }: Props) => {
                       />
                     </svg>
 
-                    <span className="mx-4 text-gray-300">{feature}</span>
+                    <span className="mx-4 text-h1subtitle">{feature}</span>
                   </div>
                 );
               })}
@@ -121,12 +121,12 @@ const Minimal = ({ header, subheader, plans }: Props) => {
 
                 <h4 className="mt-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
                   ${isMonthly ? plan.monthlyPrice : plan.yearlyPrice}{' '}
-                  <span className="text-base font-normal text-gray-300 dark:text-gray-400">
+                  <span className="text-base font-normal text-h1subtitle dark:text-gray-400">
                     / {isMonthly ? 'Month' : 'Year'}
                   </span>
                 </h4>
 
-                <div className="mt-4 h-24 text-gray-500 dark:text-gray-300">
+                <div className="mt-4 h-24 text-gray-500 dark:text-h1subtitle">
                   <StructuredText
                     data={plan.tierDescription.value}
                     renderNode={Highlighter}
@@ -150,7 +150,7 @@ const Minimal = ({ header, subheader, plans }: Props) => {
                           />
                         </svg>
 
-                        <span className="mx-4 text-gray-700 dark:text-gray-300">
+                        <span className="mx-4 text-gray-700 dark:text-h1subtitle">
                           {feature}
                         </span>
                       </div>

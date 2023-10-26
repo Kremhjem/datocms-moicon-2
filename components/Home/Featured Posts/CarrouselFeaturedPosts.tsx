@@ -65,7 +65,7 @@ const CarrouselFeaturedPosts = ({
               {currentReview.title}
             </a>
 
-            <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            <p className="mt-3 text-sm text-gray-500 dark:text-h1subtitle md:text-sm">
               {currentReview.seoTags?.description}
             </p>
 

@@ -97,7 +97,7 @@ const Header = ({ lng, data }: Props) => {
       <header
         className={`header left-0 z-40 flex w-full items-center bg-menugray ${
           sticky
-            ? 'fixed top-0 z-50 bg-white bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
+            ? 'fixed top-0 z-50 bg-menugray bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
             : `absolute ${notificationStrip ? 'top-11' : 'top-0'}`
         }`}
       >
@@ -121,7 +121,7 @@ const Header = ({ lng, data }: Props) => {
                 )}
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex w-full items-center justify-end px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -159,7 +159,7 @@ const Header = ({ lng, data }: Props) => {
                         {menuItem.path ? (
                           <Link
                             href={'/' + lng + menuItem.path}
-                            className={`flex py-2 text-sm text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
+                            className={`flex py-2 text-sm text-h1subtitle group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
                           >
                             {menuItem.title}
                           </Link>
@@ -167,7 +167,7 @@ const Header = ({ lng, data }: Props) => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-sm text-gray-300 group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-0"
+                              className="flex cursor-pointer items-center justify-between py-2 text-sm text-h1subtitle group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">

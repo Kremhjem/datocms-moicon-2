@@ -104,7 +104,7 @@ const FAQAccordion = ({ title, subtitle, questions }: Props) => {
                   }}
                   transition={{ duration: 0.5 }}
                   className={
-                    'mt-6 text-sm text-gray-500 dark:text-gray-300' +
+                    'mt-6 text-sm text-gray-500 dark:text-h1subtitle' +
                     (isOpen ? '' : ' hidden')
                   }
                 >

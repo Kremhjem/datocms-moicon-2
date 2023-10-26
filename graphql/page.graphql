@@ -173,7 +173,6 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
         _modelApiKey
         id
         displayOptions
-        lovedBy
         brand {
           _modelApiKey
           brandName

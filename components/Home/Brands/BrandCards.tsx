@@ -9,7 +9,12 @@ const BrandCards = ({ brandShowcase }: Props) => {
   return (
     <div className="bg-gray2splitbg py-6 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-12 md:px-12">
-          <div className="text-lg">TEST</div>
+        <div className="mb-4 lowercase text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl">
+            Loved by manufacturers
+        </div>
+        <div className="max-w-md text-base !leading-relaxed text-h1subtitle md:text-md">
+            We're proud that Moicon was voted the Community Spotlight Award by Autodesk in one survey. We think you'll love it too.
+        </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {brandShowcase.map((brand) => {
             return (

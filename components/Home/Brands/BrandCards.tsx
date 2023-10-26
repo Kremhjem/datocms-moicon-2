@@ -23,6 +23,9 @@ const BrandCards = ({ brandShowcase }: Props) => {
                   width={300}
                   height={300}
                 />
+                  <div>
+                      <h1 className="text-3xl">{brand.lovedBy}</h1>
+                  </div>
               </div>
             );
           })}

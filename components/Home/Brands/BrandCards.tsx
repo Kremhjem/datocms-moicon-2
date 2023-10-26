@@ -1,6 +1,5 @@
 import { BrandRecord } from '@/graphql/generated';
 import Image from 'next/image';
-import {ReactMarkdown} from "react-markdown/lib/react-markdown";
 
 type Props = {
   brandShowcase: BrandRecord[];

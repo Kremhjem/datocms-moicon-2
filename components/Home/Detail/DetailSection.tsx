@@ -23,7 +23,7 @@ type Props = {
 
 const DetailSection = ({ details, image, imagePosition }: Props) => {
   return (
-    <section className="py-16 text-center md:py-20 lg:py-28 lg:text-start">
+    <section className="py-16 bg-menugray md:py-20 lg:py-28 lg:text-start">
       <div className="container">
         <div className="-mx-4 flex flex-col items-center justify-center lg:flex-row lg:flex-wrap ">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -47,7 +47,7 @@ const DetailSection = ({ details, image, imagePosition }: Props) => {
                     renderNodeRule(isHeading, ({ children, key }) => {
                       return (
                         <h3
-                          className="mb-4 mt-9 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
+                          className="mb-4 mt-9 lowercase text-xl font-light text-h1title dark:text-white sm:text-xl lg:text-xl xl:text-4xl"
                           key={key}
                         >
                           {children}
@@ -57,7 +57,7 @@ const DetailSection = ({ details, image, imagePosition }: Props) => {
                     renderNodeRule(isParagraph, ({ children, key }) => {
                       return (
                         <p
-                          className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed"
+                          className="text-base text-h1subtitle sm:text-lg"
                           key={key}
                         >
                           {children}

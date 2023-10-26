@@ -181,6 +181,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
           brandLogo {
             url
           }
+          loved_by  # Newly configured 1
         }
       }
       ... on FeaturedPostsSectionRecord {

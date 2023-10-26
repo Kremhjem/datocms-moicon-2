@@ -23,6 +23,12 @@ const BrandCards = ({ brandShowcase }: Props) => {
                   width={300}
                   height={300}
                 />
+                  {/* Display the new text field inside a div */}
+                  <div>
+                      <p className="mt-4 text-sm text-gray-600">
+                          {brand.loved_by}
+                      </p>
+                  </div>
               </div>
             );
           })}

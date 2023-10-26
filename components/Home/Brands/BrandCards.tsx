@@ -9,6 +9,7 @@ const BrandCards = ({ brandShowcase }: Props) => {
   return (
     <div className="bg-gray2splitbg py-6 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-12 md:px-12">
+          <div className="text-lg">TEST</div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {brandShowcase.map((brand) => {
             return (

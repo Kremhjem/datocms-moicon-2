@@ -27,7 +27,7 @@ const FeatureCards = ({
           {/* Items */}
           <div className="mx-auto grid max-w-sm items-start gap-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
-            {features.slice(0, 3).map((feature) => {  // <-- Only map over the first 3 items
+              {features.map((feature) => {
               return (
                 <div
                   key={feature.id}

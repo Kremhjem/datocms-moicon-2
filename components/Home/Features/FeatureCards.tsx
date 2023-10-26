@@ -18,12 +18,12 @@ const FeatureCards = ({
     <section className="relative bg-darksplitbg z-0">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
-        className="pointer-events-none absolute inset-0 top-1/2 bg-graysplitbg md:mt-24 lg:mt-0"
+        className="pointer-events-none absolute inset-0 top-96 bg-graysplitbg"
         aria-hidden="true"
       ></div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="py-12 md:pt-28 md:pb-20">
+        <div className="flex flex-col md:gap-8 py-12 md:pt-28 md:0">
           {/* Items */}
           <div className="mx-auto grid max-w-sm items-start gap-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
@@ -42,10 +42,10 @@ const FeatureCards = ({
                       objectPosition="50% 50%"
                     />
                   </div>
-                  <h4 className="mb-1 text-3xl font-light leading-snug tracking-tight text-h1title lowercase">
+                  <h4 className="mb-3 text-4xl font-light leading-snug tracking-tight text-h1title lowercase">
                     {feature.featureTitle}
                   </h4>
-                  <div className="text-h1subtitle">
+                  <div className="text-h1subtitle md:text-lg">
                     <ReactMarkdown>
                       {feature.featureDescription || ''}
                     </ReactMarkdown>
@@ -55,8 +55,8 @@ const FeatureCards = ({
             })}
           </div>
             {/* Section header */}
-            <div className="inline-block justify-start pl-4 max-w-3xl pt-12 md:pt-0">
-                <h1 className="mb-4 text-3xl font-bold !leading-tight text-h1title dark:text-white sm:text-4xl md:text-[45px]">
+            <div className="pl-6 max-w-3xl pt-12 md:pt-0">
+                <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
                     {featuresHeader}
                 </h1>
                 <div className="text-xl text-h1subtitle">

@@ -28,7 +28,7 @@ const Video = ({
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-menugray">
-      <div className="mx-auto max-w-6xl px-4 sm:px-12">
+      <div className="mx-auto max-w-6xl px-6 sm:px-6">
         <SectionTitle
           title={videoHeader}
           paragraph={videoSubheader}

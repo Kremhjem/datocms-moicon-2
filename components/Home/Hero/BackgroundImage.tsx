@@ -56,7 +56,7 @@ const BackgroundImageHero = ({
           </div>
         </div>
             <div
-                className="w-full absolute translate-y-[13rem] bg-center bg-left-40 h-[200px] md:h-auto md:bg-center md:bg-top bg-cover md:bg-contain md:translate-y-[7rem]"
+                className="w-full absolute translate-y-[14rem] bg-center bg-left-40 h-[200px] md:h-auto md:bg-center md:bg-top bg-cover md:bg-contain md:translate-y-[7rem]"
                 style={{
                     top: 0,
                     bottom: 0,

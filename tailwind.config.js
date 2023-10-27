@@ -73,6 +73,10 @@ module.exports = {
       },
       padding: {
         '61': '14.6rem',
+        '14': '3.4rem',
+      },
+      height: {
+        'hero-titles': 'calc(7rem + 20vw)',  // Add custom height
       },
     },
   },

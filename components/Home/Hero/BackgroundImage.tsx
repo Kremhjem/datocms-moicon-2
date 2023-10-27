@@ -16,16 +16,21 @@ const BackgroundImageHero = ({
   image,
 }: Props) => {
   return (
-    <div
-      className="mt-12 h-[24rem] w-full bg-cover bg-center object-cover bg-custom-gradient">
-      <div className="flex h-full w-full flex-col items-start justify-center px-8 lg:px-61 bg-center object-cover absolute top-0 z-10"
-           style={{
-             backgroundSize: 'contain',
-             backgroundRepeat: 'no-repeat',
-             backgroundImage: `url('${image?.responsiveImage?.src}')`,
-           }}
-      >
-        <div className="flex flex-col gap-4 relative bottom-28">
+    <div className="pt-14 h-full mx-auto relative">
+        <div
+            className="bg-custom-gradient relative pt-28 pb-0 pl-0 pr-0"
+            style={{
+                height: 'calc(10rem + 20vw)',
+            }}
+        >
+            <div
+                className="grid grid-cols-1 gap-x-16 gap-y-8 absolute top-16"
+                style={{
+                    left: `calc(50% - 0.5 * min(100vw, 75rem) + 4.8rem)`,
+                    width: `clamp(30rem, 25vw, 40rem)`,
+                }}
+            >
+
           <h1 className="sm:text-7-75xl text-5xl-inherit font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
           <div className="leading-relaxed text-h1subtitle xl:text-3xl max-w-md lowercase">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
@@ -48,6 +53,18 @@ const BackgroundImageHero = ({
             })}
           </div>
         </div>
+            <div
+                className="w-full absolute translate-y-[10rem]"
+                style={{
+                    top: 0,
+                    bottom: 0,
+                    height: 'auto',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundImage: `url('${image?.responsiveImage?.src}')`,
+                    zIndex: 1,  // add this line
+                }}
+            ></div>
       </div>
     </div>
   );

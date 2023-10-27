@@ -18,21 +18,23 @@ const BackgroundImageHero = ({
   return (
     <div className="pt-14 h-full mx-auto relative">
         <div
-            className="bg-custom-gradient relative pt-28 pb-0 pl-0 pr-0"
+            className="bg-custom-gradient relative pt-16 pb-72 md:pt-28 md:pb-0 md:pl-0 md:pr-0"
             style={{
-                height: 'calc(10rem + 20vw)',
+                height: 'calc(7rem + 20vw)',
             }}
         >
             <div
-                className="grid grid-cols-1 gap-x-16 gap-y-8 absolute top-16"
+                className="flex flex-col items-center gap-4 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-8 md:absolute top-8 z-10"
                 style={{
                     left: `calc(50% - 0.5 * min(100vw, 75rem) + 4.8rem)`,
-                    width: `clamp(30rem, 25vw, 40rem)`,
+                    // width: `clamp(30rem, 25vw, 40rem)`,
                 }}
             >
 
-          <h1 className="sm:text-7-75xl text-5xl-inherit font-medium text-hero custom-filter tracking-widester relative top-10">{heroTitle}</h1>
-          <div className="leading-relaxed text-h1subtitle xl:text-3xl max-w-md lowercase">
+          <h1 className="text-5xl-inherit font-medium text-hero custom-filter tracking-widester leading-6 sm:leading-normal sm:text-7-75xl md:relative top-10">
+              {heroTitle}
+          </h1>
+          <div className="text-h1subtitle lowercase text-center text-2xl md:text-left md:w-4/5 xl:text-3xl">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex gap-4">
@@ -54,12 +56,10 @@ const BackgroundImageHero = ({
           </div>
         </div>
             <div
-                className="w-full absolute translate-y-[10rem]"
+                className="w-full absolute translate-y-[13rem] bg-center bg-left-40 h-[200px] md:h-auto md:bg-center md:bg-top bg-cover md:bg-contain md:translate-y-[7rem]"
                 style={{
                     top: 0,
                     bottom: 0,
-                    height: 'auto',
-                    backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
                     backgroundImage: `url('${image?.responsiveImage?.src}')`,
                     zIndex: 1,  // add this line

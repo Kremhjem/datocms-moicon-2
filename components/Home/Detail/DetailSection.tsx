@@ -23,7 +23,7 @@ type Props = {
 
 const DetailSection = ({ details, image, imagePosition }: Props) => {
   return (
-    <section className="py-16 bg-graysplitbg md:py-20 lg:py-28 lg:text-start">
+    <section className="py-16 bg-graysplitbg px-6 md:py-20 lg:py-28 lg:text-start">
       <div className="container">
         <div className="-mx-4 flex flex-col items-center justify-center lg:flex-row lg:flex-wrap ">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">

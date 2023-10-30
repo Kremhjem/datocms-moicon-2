@@ -15,7 +15,7 @@ const MinimalReviewCards = ({ reviews, header, subheader }: Props) => {
   return (
     <div className="bg-menugray py-16 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-6xl px-6 md:px-6">
-        <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">
+        <h2 className="mb-4 lowercase text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl">
           {header}
         </h2>
 
@@ -24,7 +24,7 @@ const MinimalReviewCards = ({ reviews, header, subheader }: Props) => {
             return (
               <div
                 key={review.id}
-                className="flex flex-col items-center justify-between gap-4 rounded-lg bg-primary/80 px-8 py-6 md:gap-6"
+                className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray2splitbg px-8 py-6 md:gap-6"
               >
                 <div className="max-w-md text-center text-white lg:text-lg">
                   <StructuredText

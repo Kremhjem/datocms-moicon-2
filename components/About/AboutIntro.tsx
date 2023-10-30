@@ -39,7 +39,7 @@ const AboutIntro = ({
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
-    <div className="mx-auto mt-16 px-4 py-12 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
+    <div className="mx-auto bg-custom-gradient mt-14 px-4 py-12 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

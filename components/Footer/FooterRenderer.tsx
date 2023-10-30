@@ -18,7 +18,7 @@ type Props = {
 
 const Footer = ({ data, lng }: Props) => {
   return (
-    <footer className="relative z-10 mx-auto flex w-full flex-col items-center justify-center bg-menugray pt-16 text-center md:text-start lg:pt-24">
+    <footer className="relative z-10 mx-auto flex w-full flex-col items-center justify-center bg-graysplitbg pt-16 text-center md:text-start lg:pt-24">
       <div className="container w-full">
         <div className="flex w-full flex-col justify-between md:flex-row md:px-16">
           <div className="w-full">

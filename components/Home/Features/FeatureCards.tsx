@@ -25,13 +25,13 @@ const FeatureCards = ({
       <div className="relative mx-auto max-w-6xl py-24 md:pt-28">
         <div className="flex flex-col gap-16">
           {/* Items */}
-          <div className="mx-auto grid max-w-sm items-start gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto grid max-w-sm items-start gap-8 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
               {features.map((feature) => {
               return (
                 <div
                   key={feature.id}
-                  className="relative flex flex-col items-start px-6 py-0"
+                  className="relative flex flex-col items-start py-0"
                 >
                   <div className="hidden relative -mt-1 mb-2 flex h-20 w-20 items-start justify-center overflow-hidden rounded-full bg-primary bg-opacity-5">
                     <DatoImage

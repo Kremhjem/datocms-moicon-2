@@ -39,7 +39,7 @@ const AboutIntro = ({
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
-    <div className="mx-auto bg-custom-gradient mt-14 px-4 py-12 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20">
+    <div className="mx-auto bg-language mt-12 px-4 py-12 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -76,11 +76,11 @@ const AboutIntro = ({
                 height="24"
               />
             </motion.svg>
-            <span className="relative text-gray-700">{firstWord}</span>
+            <span className="relative font-light text-h1title text-3xl md:text-4xl">{firstWord}</span>
           </span>{' '}
-          {restOfTheString}
+            <span className="font-medium text-h1title text-3xl md:text-4xl">{restOfTheString}</span>
         </h2>
-        <div className="text-base text-gray-700 md:text-lg">
+        <div className="text-h1subtitle text-xl md:text-xl">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
       </motion.div>
@@ -139,7 +139,7 @@ const AboutIntro = ({
                 renderNodeRule(isHeading, ({ children, key }) => {
                   return (
                     <h3
-                      className="mb-2 mt-4 text-lg font-semibold leading-5"
+                      className="mb-2 mt-4 text-base font-medium leading-5 text-h1subtitle md:text-md"
                       key={key}
                     >
                       {children}

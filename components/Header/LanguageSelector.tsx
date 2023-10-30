@@ -39,7 +39,7 @@ const LanguageSelector = ({ lng, languages }: Props) => {
 
       <div
         className={
-          'absolute end-0 z-10 ml-4 mt-1 w-28 rounded-md border border-gray-100 bg-white shadow-lg' +
+          'absolute end-0 z-10 ml-4 mt-1 w-28 rounded-md border border-gray-100 bg-menugray shadow-lg' +
           (isOpen ? '' : ' hidden')
         }
         role="menu"

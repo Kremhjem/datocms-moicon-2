@@ -1,6 +1,7 @@
 import { ButtonRecord, FileField } from '@/graphql/generated';
 import { Maybe } from 'graphql/jsutils/Maybe';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import LinkedinFollowCompany from '@/components/LinkedinFollow/LinkedinFollowCompany';
 
 type Props = {
   heroTitle: string;
@@ -53,6 +54,9 @@ const BackgroundImageHero = ({
                 </a>
               );
             })}
+              <div className="absolute bottom-20 scale-75 h-4 md:relative md:top-0 md:scale-100">
+                  <LinkedinFollowCompany companyId={11811767} counter='right' />
+              </div>
           </div>
         </div>
             <div

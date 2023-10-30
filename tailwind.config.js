@@ -39,6 +39,8 @@ module.exports = {
         languagecolor: '#a6a6a6',
         graysplitbg: '#383838',
         gray2splitbg: '#222',
+        gray3splitbg: '#404040',
+        gray4splitbg: '#4c4c4c',
         darksplitbg: '#1a1a1a',
         secondarybtn: '#666',
         cardbg: '#212121',

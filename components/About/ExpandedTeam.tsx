@@ -15,11 +15,11 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
   return (
     <section className="bg-gray3splitbg dark:bg-gray-900">
       <div className="container mx-auto px-6 py-10">
-        <h1 className="mb-4 text-center text-2xl font-light text-h1title dark:text-white lg:text-4xl">
+        <h1 className="mb-4 lowercase text-center text-3xl font-light text-h1title dark:text-white lg:text-4xl">
           {header}
         </h1>
 
-        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-h1subtitle">
+        <div className="mx-auto my-6 max-w-3xl text-center text-h1subtitle dark:text-h1subtitle">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 
@@ -29,7 +29,7 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
               <Link
                 href={`/${lng}/posts/author/${member.slug}`}
                 key={member.id}
-                className=" group transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300 hover:border-transparent hover:bg-primary/90 hover:opacity-95 dark:border-gray-700 dark:hover:border-transparent"
+                className="group transform cursor-pointer rounded-xl px-12 py-8 transition-colors duration-300 bg-cardbg hover:border-transparent hover:bg-primary/90 hover:opacity-95 dark:border-gray-700 dark:hover:border-transparent"
               >
                 <div className="flex flex-col items-center sm:-mx-4 sm:flex-row">
                   <div className="relative z-50 h-24 w-24 flex-shrink-0 overflow-hidden rounded-full object-cover ring-4 ring-h1subtitle sm:mx-4">
@@ -42,17 +42,17 @@ const ExpandedTeam = ({ header, subheader, members, lng }: Props) => {
                   </div>
 
                   <div className="mt-4 sm:mx-4 sm:mt-0">
-                    <h1 className="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-2xl">
+                    <h1 className="text-xl font-semibold capitalize text-h1title group-hover:text-white dark:text-white md:text-2xl">
                       {member.name}
                     </h1>
 
-                    <p className="mt-2 capitalize text-gray-500 group-hover:text-white">
+                    <p className="mt-2 capitalize text-primary group-hover:text-white">
                       {member.bio}
                     </p>
                   </div>
                 </div>
 
-                <p className="mt-4 capitalize text-gray-500 group-hover:text-white dark:text-h1subtitle">
+                <p className="mt-4 capitalize text-h1subtitle group-hover:text-white dark:text-h1subtitle">
                   {member.description}
                 </p>
 

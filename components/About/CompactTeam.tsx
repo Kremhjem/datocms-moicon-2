@@ -19,7 +19,7 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
           {header}
         </h1>
 
-        <div className="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-h1subtitle">
+        <div className="mx-auto my-6 max-w-3xl text-center text-h1subtitle dark:text-h1subtitle">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 

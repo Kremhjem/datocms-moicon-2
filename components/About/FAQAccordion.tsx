@@ -71,7 +71,7 @@ const FAQAccordion = ({ title, subtitle, questions }: Props) => {
         <h1 className="mb-4 text-center text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
           {title}
         </h1>
-        <div className=" text-center text-gray-500">
+        <div className=" text-center text-h1subtitle">
           <ReactMarkdown>{subtitle || ''}</ReactMarkdown>
         </div>
 

@@ -114,9 +114,9 @@ const Header = ({ lng, data }: Props) => {
                   <Image
                     src={data.layout.logo.url}
                     alt="logo"
-                    width={500}
-                    height={140}
-                    className="w-full dark:hidden"
+                    width={35}
+                    height={35}
+                    className="py-2 dark:hidden"
                   />
                 )}
               </Link>

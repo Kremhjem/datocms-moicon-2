@@ -25,7 +25,7 @@ const BackgroundImageHero = ({
             }}
         >
             <div
-                className="flex flex-col items-center gap-4 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-8 md:absolute top-8 z-10"
+                className="flex flex-col items-center gap-4 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-4 md:absolute top-0 z-10"
                 style={{
                     left: `calc(50% - 0.5 * min(100vw, 75rem) + 4.8rem)`,
                     // width: `clamp(30rem, 25vw, 40rem)`,
@@ -41,9 +41,9 @@ const BackgroundImageHero = ({
           <div className="flex gap-4">
             {buttons.map((button) => {
               const primary =
-                'inline-block rounded-md bg-primary/90 px-4 py-3 lowercase text-center text-sm font-medium text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base-none';
+                'inline-block rounded-md bg-primary/90 px-4 pt-4 pb-3.5 lowercase text-center text-sm font-medium text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base-none';
               const secondary =
-                'inline-block rounded-md bg-secondarybtn px-4 py-3 lowercase text-center text-sm font-medium text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-h1subtitle focus-visible:ring active:text-gray-700 md:text-base-none';
+                'inline-block rounded-md bg-secondarybtn px-4 pt-4 pb-3.5 lowercase text-center text-sm font-medium text-h1title outline-none ring-indigo-300 transition duration-100 hover:bg-h1subtitle focus-visible:ring active:text-gray-700 md:text-base-none';
               return (
                 <a
                   key={button.id}
@@ -54,9 +54,6 @@ const BackgroundImageHero = ({
                 </a>
               );
             })}
-              <div className="absolute bottom-20 scale-75 h-4 md:relative md:top-0 md:scale-100">
-                  <LinkedinFollowCompany companyId={11811767} counter='right' />
-              </div>
           </div>
         </div>
             <div
@@ -69,6 +66,11 @@ const BackgroundImageHero = ({
                     zIndex: 1,  // add this line
                 }}
             ></div>
+            <div
+                className="float-right relative top-32 right-10 scale-75 h-4 md:top-32 md:scale-100"
+            >
+                <LinkedinFollowCompany companyId={11811767} counter='right' />
+            </div>
       </div>
     </div>
   );

@@ -55,12 +55,28 @@ const FeatureCards = ({
             })}
           </div>
             {/* Section header */}
-            <div className="mx-auto px-6 pt-24">
-                <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
-                    {featuresHeader}
-                </h1>
-                <div className="text-xl text-h1subtitle">
-                    <ReactMarkdown>{featuresSubheader || ''}</ReactMarkdown>
+            <div className="flex mx-auto px-6 pt-24 gap-6">
+                <div className="flex flex-col max-w-40p">
+                    <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
+                        {featuresHeader}
+                    </h1>
+                    <div className="text-xl text-h1subtitle">
+                        <ReactMarkdown>{featuresSubheader || ''}</ReactMarkdown>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg overflow-hidden">
+                    <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
+                        <span className="text-browser">←</span>
+                        <span className="text-browser">→</span>
+                        <span className="text-browser">⟳</span>
+                        <div className="flex pl-2 pt-0.5 items-center text-browser w-full bg-gray3splitbg rounded-xl w-5/6">ⓘ https://moicon.net</div>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                    </div>
+                    <div className="text-md text-h1subtitle bg-cardbg">
+                        <img src="https://www.datocms-assets.com/109265/1698134901-moicon-digital-twin-factory-workers-walking-inside-plant.jpg" alt="Description of Image" className="max-w-4xl"/>
+                    </div>
                 </div>
             </div>
         </div>

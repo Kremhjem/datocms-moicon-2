@@ -47,6 +47,7 @@ module.exports = {
         hero: '#4a4a55',
         h1title: '#e6e6e6',
         h1subtitle: '#ccc',
+        browser: '#999',
         white: '#FFFFFF',
         black: '#090E34',
         dark: '#1D2144',
@@ -79,6 +80,9 @@ module.exports = {
       },
       spacing: {
         '46rem': '46rem',
+      },
+      maxWidth: {
+        '40p': '40%',
       },
     },
   },

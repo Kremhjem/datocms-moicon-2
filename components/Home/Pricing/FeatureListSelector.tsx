@@ -21,6 +21,9 @@ const FeatureListSelector = ({ header, subheader, plans }: Props) => {
 
   return (
     <div className="mt-14 bg-language py-16 dark:bg-gray-900">
+        <div className="text-center text-h1title lowercase text-3xl">
+          Let's talk!
+        </div>
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
           {header}

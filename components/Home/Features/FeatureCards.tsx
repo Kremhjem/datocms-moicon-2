@@ -25,7 +25,7 @@ const FeatureCards = ({
       <div className="relative mx-auto max-w-6xl py-24 md:pt-28">
         <div className="flex flex-col gap-16">
           {/* Items */}
-          <div className="mx-auto grid max-w-sm items-start gap-8 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto grid max-w-sm items-start gap-16 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
               {features.map((feature) => {
               return (
@@ -42,7 +42,7 @@ const FeatureCards = ({
                       objectPosition="50% 50%"
                     />
                   </div>
-                  <h4 className="mb-3 font-light leading-snug tracking-tight text-h1title lowercase text-3xl md:text-4xl ">
+                  <h4 className="mb-6 font-light leading-snug tracking-tight text-h1title lowercase text-3xl md:text-4xl ">
                     {feature.featureTitle}
                   </h4>
                   <div className="text-h1subtitle text-xl md:text-xl">
@@ -56,26 +56,28 @@ const FeatureCards = ({
           </div>
             {/* Section header */}
             <div className="flex mx-auto px-6 pt-24 gap-6">
-                <div className="flex flex-col max-w-40p">
+                <div className="flex flex-col rounded-lg overflow-hidden w-2/3">
+                    <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
+                        <span className="pt-1 text-browser">←</span>
+                        <span className="pt-1 text-browser">→</span>
+                        <span className="pt-1 text-white">⟳</span>
+                        <div className="flex pl-2 pt-0.5 items-center text-browser w-full bg-gray3splitbg rounded-xl w-5/6">
+                            ⓘ https://<span className="text-white">moicon.net</span>
+                        </div>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                    </div>
+                    <div className="bg-cardbg">
+                        <img src="https://www.datocms-assets.com/109265/1700804240-app-0001-12.jpg" alt="Description of Image"/>
+                    </div>
+                </div>
+                <div className="flex flex-col justify-center text-center w-1/3">
                     <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
                         {featuresHeader}
                     </h1>
-                    <div className="text-xl text-h1subtitle">
+                    <div className="text-lg text-h1subtitle">
                         <ReactMarkdown>{featuresSubheader || ''}</ReactMarkdown>
-                    </div>
-                </div>
-                <div className="flex flex-col rounded-lg overflow-hidden">
-                    <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
-                        <span className="text-browser">←</span>
-                        <span className="text-browser">→</span>
-                        <span className="text-browser">⟳</span>
-                        <div className="flex pl-2 pt-0.5 items-center text-browser w-full bg-gray3splitbg rounded-xl w-5/6">ⓘ https://moicon.net</div>
-                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
-                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
-                        <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
-                    </div>
-                    <div className="text-md text-h1subtitle bg-cardbg">
-                        <img src="https://www.datocms-assets.com/109265/1698134901-moicon-digital-twin-factory-workers-walking-inside-plant.jpg" alt="Description of Image" className="max-w-4xl"/>
                     </div>
                 </div>
             </div>

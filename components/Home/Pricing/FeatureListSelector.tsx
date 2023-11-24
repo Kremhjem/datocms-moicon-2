@@ -26,9 +26,7 @@ const FeatureListSelector = ({ header, subheader, plans }: Props) => {
         <div className="text-center text-h1title lowercase text-3xl">
           Let's talk!
         </div>
-        <div className="">
-          <HubSpotMeetingEmbed />
-        </div>
+        <HubSpotMeetingEmbed />
       </div>
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">

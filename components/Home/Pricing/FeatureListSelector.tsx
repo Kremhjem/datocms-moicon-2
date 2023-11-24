@@ -5,7 +5,6 @@ import { Maybe } from 'graphql/jsutils/Maybe';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { PricingTierRecord } from '@/graphql/generated';
-// import HubSpotMeetingEmbed from 'components/Meeting/HubSpotMeetingEmbed';
 
 type Props = {
   header: string;
@@ -22,12 +21,6 @@ const FeatureListSelector = ({ header, subheader, plans }: Props) => {
 
   return (
     <div className="mt-14 bg-language py-16 dark:bg-gray-900">
-      <div className="">
-        <div className="text-center text-h1title lowercase text-3xl">
-          Let's talk!
-        </div>
-        {/*<HubSpotMeetingEmbed />*/}
-      </div>
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
           {header}

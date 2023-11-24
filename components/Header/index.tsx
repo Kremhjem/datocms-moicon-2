@@ -98,7 +98,7 @@ const Header = ({ lng, data }: Props) => {
         className={`header left-0 z-40 flex w-full items-center bg-menugray ${
           sticky
             ? 'fixed top-0 z-50 bg-menugray bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
-            : `absolute ${notificationStrip ? 'top-11' : 'top-0'}`
+            : `absolute ${notificationStrip ? 'top-0' : 'top-0'}`
         }`}
       >
         <div className="container">

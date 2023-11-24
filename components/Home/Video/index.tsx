@@ -27,7 +27,7 @@ const Video = ({
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-menugray">
+    <section className="relative z-10 py-24 bg-menugray">
       <div className="mx-auto max-w-6xl px-6 sm:px-6">
         <SectionTitle
           title={videoHeader}

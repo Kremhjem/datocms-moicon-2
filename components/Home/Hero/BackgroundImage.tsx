@@ -27,8 +27,9 @@ const BackgroundImageHero = ({
             <div
                 className="flex flex-col items-center gap-4 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-4 md:absolute top-0 z-10"
                 style={{
-                    left: `calc(50% - 0.5 * min(100vw, 75rem) + 4.8rem)`,
+                    left: `calc(50% - 0.521 * min(100vw, 75rem) + 4.8rem)`,
                     // width: `clamp(30rem, 25vw, 40rem)`,
+                    //left: `calc(50% - 0.5 * min(100vw, 75rem) + 4.8rem)`, original
                 }}
             >
 

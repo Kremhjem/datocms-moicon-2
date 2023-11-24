@@ -7,7 +7,7 @@ type Props = {
 
 const BrandCards = ({ brandShowcase }: Props) => {
   return (
-    <div className="bg-gray2splitbg py-16 lg:py-16">
+    <div className="bg-gray2splitbg py-24">
       <div className="mx-auto max-w-6xl px-6 sm:px-6 md:px-6">
         <div className="mb-4 lowercase text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl">
             Loved by manufacturers

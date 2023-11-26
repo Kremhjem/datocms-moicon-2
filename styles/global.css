@@ -60,3 +60,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+strong {
+  color: #23c3ff;
+  font-weight: 200;
+}

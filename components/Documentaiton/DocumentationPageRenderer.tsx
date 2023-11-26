@@ -47,7 +47,7 @@ const DocumentaitonPageRenderer = ({ data }: Props) => {
           renderNodeRule(isParagraph, ({ children, key, node }) => {
             return (
               <div
-                className="py-1 text-base leading-relaxed text-body-color sm:text-lg sm:leading-relaxed"
+                className="py-1 text-base leading-relaxed text-h1subtitle sm:text-lg sm:leading-relaxed"
                 key={key}
               >
                 {children}
@@ -57,7 +57,7 @@ const DocumentaitonPageRenderer = ({ data }: Props) => {
           renderNodeRule(isList, ({ children, key }) => {
             return (
               <ul
-                className="list-disc pl-4 text-base font-medium leading-relaxed text-gray-500 sm:text-lg sm:leading-relaxed"
+                className="list-disc pl-4 text-base leading-relaxed text-gray-500 sm:text-lg sm:leading-relaxed"
                 key={key}
               >
                 {children}

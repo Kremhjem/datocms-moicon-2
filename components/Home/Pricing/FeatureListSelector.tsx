@@ -22,14 +22,15 @@ const FeatureListSelector = ({ header, subheader, plans }: Props) => {
   return (
     <div className="mt-14 bg-language py-16 dark:bg-gray-900">
       <div className="container mx-auto px-6 py-8">
+        {/*<div>*/}
+        {/*  <p className="text-sm">{pricingTop}</p>*/}
+        {/*</div>*/}
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
           {header}
         </h1>
-
         <div className="mx-auto mt-4 max-w-2xl text-center text-gray-500 dark:text-h1subtitle xl:mt-6">
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
-
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3 xl:mt-12">
           {plans.map((plan) => {
             const planIsSelected = plan.tierName === selectedPlan;

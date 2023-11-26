@@ -38,9 +38,9 @@ const DocumentationSidebarItem = ({ page, lng }: Props) => {
   const currentSlug = pathname.split('/')[pathname.split('/').length - 1];
 
   const activeClass =
-    'flex cursor-pointer items-center rounded-lg bg-gray-100 px-4 py-2 font-medium text-gray-700';
+    'flex cursor-pointer items-center rounded-lg bg-cardbg px-4 py-2 font-medium text-h1title';
   const inactiveClass =
-    'flex cursor-pointer items-center rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700';
+    'flex cursor-pointer items-center rounded-lg px-4 py-2 text-h1subtitle hover:text-h1title';
 
   let isActive = currentSlug === page.slug;
 
@@ -95,7 +95,7 @@ const DocumentationSidebarItem = ({ page, lng }: Props) => {
           </svg>
           <span
             className={
-              !(currentSlug === page.slug) ? 'font-normal text-gray-500' : ''
+              !(currentSlug === page.slug) ? 'font-normal text-h1subtitle' : ''
             }
           >
             {' '}

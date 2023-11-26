@@ -56,14 +56,14 @@ const PreviewCard = ({ featuredSection, lng }: Props) => {
         initial="initial"
         whileHover="hover"
         animate="initial"
-        className="hover:bg-primary-200/20 hover:ring-primary/40 dark:hover:bg-primary-500/10 hover:dark:ring-primary-500/30 relative h-60 w-full cursor-pointer overflow-hidden rounded-xl p-2 transition-all hover:ring"
+        className="hover:bg-primary-200/20 hover:ring-primary/40 relative h-44 w-full cursor-pointer overflow-hidden rounded-xl p-2 transition-all hover:ring"
       >
         <motion.div
           variants={mainImage}
-          className="relative h-1/2 w-full overflow-hidden rounded-xl border bg-primary/10 border-slate-300 dark:border-slate-700 dark:bg-slate-800/50"
+          className="relative h-1/2 w-full overflow-hidden rounded-sm bg-language dark:border-slate-700 dark:bg-slate-800/50"
         >
           <div className="flex h-full w-full flex-col flex-wrap justify-center p-6">
-            <p className="whitespace-nowrap text-2xl font-black text-slate-700 dark:text-slate-500">
+            <p className="whitespace-nowrap text-2xl text-h1subtitle dark:text-slate-500">
               {featuredSection.title}
             </p>
             <p className=" text-md font-bold text-slate-400 dark:text-slate-500">

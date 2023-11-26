@@ -25,7 +25,7 @@ type Props = {
 
 const DocumentaitonPageRenderer = ({ data }: Props) => {
   return (
-    <div className="px-24 py-8">
+    <div className="px-24 py-8 bg-darksplitbg">
       <StructuredText
         data={
           (
@@ -37,7 +37,7 @@ const DocumentaitonPageRenderer = ({ data }: Props) => {
           renderNodeRule(isHeading, ({ children, key }) => {
             return (
               <h3
-                className="mb-4 mt-9 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
+                className="mb-4 mt-9 text-xl text-h1title dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
                 key={key}
               >
                 {children}
@@ -47,7 +47,7 @@ const DocumentaitonPageRenderer = ({ data }: Props) => {
           renderNodeRule(isParagraph, ({ children, key, node }) => {
             return (
               <div
-                className="py-1 text-base font-medium leading-relaxed text-gray-500 sm:text-lg sm:leading-relaxed"
+                className="py-1 text-base leading-relaxed text-body-color sm:text-lg sm:leading-relaxed"
                 key={key}
               >
                 {children}

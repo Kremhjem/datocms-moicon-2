@@ -32,7 +32,7 @@ export default async function RootLayout({
 
   return (
     <div>
-      <div className="fixed z-50 hidden w-1/4 flex-col justify-between border-e bg-white lg:flex h-full">
+      <div className="fixed z-50 hidden w-1/4 flex-col justify-between bg-language lg:flex h-full">
         <div className="px-4 py-6">
           <div className="w-60 max-w-full px-4 xl:mr-12">
             <Link
@@ -73,9 +73,9 @@ export default async function RootLayout({
           </ul>
         </div>
 
-        <div className="sticky inset-x-0 bottom-0 z-40 border-b border-t border-gray-100 bg-white p-8">
+        <div className="sticky inset-x-0 bottom-0 z-40 bg-language p-8">
           <div>
-            <p className="text-sm">{data.documentationHome.footerText}</p>
+            <p className="text-sm text-h1subtitle">{data.documentationHome.footerText}</p>
           </div>
         </div>
       </div>

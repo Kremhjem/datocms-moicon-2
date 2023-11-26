@@ -27,13 +27,13 @@ const Documentation = async ({ params: { lng } }: Params) => {
   const lastWord = titleWords.pop();
 
   return (
-    <article className="not-prose w-full max-w-none">
-      <section className="not-prose relative mx-auto max-w-6xl px-6 py-16">
-        <h1 className="2xl:px-30 mb-4 text-4xl font-black text-slate-900 dark:text-white md:text-6xl lg:mb-8 lg:text-center lg:leading-tight">
+    <article className="not-prose w-full max-w-none bg-darksplitbg">
+      <section className="not-prose relative mx-auto max-w-6xl px-6 pt-16">
+        <h1 className="2xl:px-30 mb-4 text-3xl font-black text-h1title dark:text-white md:text-3xl lg:mb-8 lg:text-center lg:leading-tight">
           {titleWords.join(' ')}
           <span className="text-primary opacity-90"> {lastWord}</span>
         </h1>
-        <p className="font-bold text-slate-600 dark:text-slate-100 lg:text-center lg:text-lg">
+        <p className="font-bold text-h1title dark:text-slate-100 lg:text-center lg:text-lg">
           {data.documentationHome.subheader}
         </p>
 

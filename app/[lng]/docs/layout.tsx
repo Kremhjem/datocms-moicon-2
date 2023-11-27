@@ -60,17 +60,19 @@ export default async function RootLayout({
               </kbd>
             </button>
           </div>
-          <ul className="mt-6 space-y-1">
-            {data.allDocumentationPages.map((page) => {
-              return (
-                <DocumentationSidebarItem
-                  key={page.id}
-                  page={page as DocumentationPageRecord}
-                  lng={lng}
-                />
-              );
-            })}
-          </ul>
+          <div className="max-h-30 overflow-y-auto">
+            <ul className="mt-6 space-y-1">
+              {data.allDocumentationPages.map((page) => {
+                return (
+                  <DocumentationSidebarItem
+                    key={page.id}
+                    page={page as DocumentationPageRecord}
+                    lng={lng}
+                  />
+                );
+              })}
+            </ul>
+          </div>
         </div>
 
         <div className="sticky inset-x-0 bottom-0 z-40 bg-language p-8">

@@ -7,13 +7,13 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { PricingTierRecord } from '@/graphql/generated';
 
 type Props = {
-  pricingTop: string;
+  top: string;
   header: string;
   subheader: Maybe<string>;
   plans: PricingTierRecord[];
 };
 
-const FeatureListSelector = ({ pricingTop, header, subheader, plans }: Props) => {
+const FeatureListSelector = ({ top, header, subheader, plans }: Props) => {
   const [selectedPlan, setSelectedPlan] = useState(plans[1].tierName);
 
   const selectedPlanFeatures = plans
@@ -24,7 +24,7 @@ const FeatureListSelector = ({ pricingTop, header, subheader, plans }: Props) =>
     <div className="mt-14 bg-language py-16 dark:bg-gray-900">
       <div className="container mx-auto px-6 py-8">
         <div>
-          <p className="text-sm">{pricingTop}</p>
+          <p className="text-sm">{top}</p>
         </div>
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
           {header}

@@ -263,6 +263,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
               case 'cards_gradient':
                 return (
                   <GradientCards
+                    toptext={pricingSectionRecord.pricingSectionToptext}
                     header={pricingSectionRecord.pricingSectionHeader}
                     subheader={pricingSectionRecord.pricingSectionSubheader}
                     plans={pricingSectionRecord.plans}

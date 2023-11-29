@@ -5,20 +5,24 @@ import { StructuredText } from 'react-datocms/structured-text';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 type Props = {
+  toptext: string;
   header: string;
   subheader: Maybe<string>;
   plans: PricingTierRecord[];
 };
 
-const GradientCards = ({ header, subheader, plans }: Props) => {
+const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
   const planInEvidence = plans.shift() as PricingTierRecord;
   const evidencePlanFeatures = planInEvidence.planFeatures.split(', ');
 
   return (
-    <div className="bg-white py-6 sm:py-8 lg:py-12">
+    <div className="bg-language mt-14 py-16">
       <div className="mx-auto flex flex-col justify-center px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
+            {toptext}
+          </h2>
+          <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
             {header}
           </h2>
 
@@ -28,7 +32,7 @@ const GradientCards = ({ header, subheader, plans }: Props) => {
         </div>
 
         <div className="flex w-full flex-row flex-wrap items-center justify-center gap-4">
-          <div className="relative mr-4 flex h-[550px] max-w-md flex-col justify-center rounded-lg bg-gradient-to-tr from-indigo-500 to-primary/80 p-8 shadow-xl">
+          <div className="relative mr-4 flex h-[700px] max-w-md flex-col justify-center rounded-lg bg-gradient-to-tr from-indigo-500 to-primary/80 p-8 shadow-xl">
             <div className="h-96">
               <span className="absolute right-0 top-0 order-first m-8 inline-block rounded-full bg-indigo-200 bg-opacity-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white lg:order-none">
                 Best value
@@ -89,7 +93,7 @@ const GradientCards = ({ header, subheader, plans }: Props) => {
             return (
               <div
                 key={plan.id}
-                className="flex h-[550px] w-96 flex-col justify-center rounded-lg bg-gray-800 p-8"
+                className="flex h-[700px] w-96 flex-col justify-center rounded-lg bg-gray-800 p-8"
               >
                 <div className="h-96">
                   <div className="mb-4">

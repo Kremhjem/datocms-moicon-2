@@ -46,7 +46,7 @@ const Post = ({ data, lng }: Props) => {
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-8/12">
             <div>
-              <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+              <h2 className="mb-8 text-3xl leading-tight text-h1title dark:text-white sm:text-4xl sm:leading-tight">
                 {data.post.title}
               </h2>
               <div className="mb-10 flex items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
@@ -189,7 +189,7 @@ const Post = ({ data, lng }: Props) => {
                     renderNodeRule(isHeading, ({ children, key }) => {
                       return (
                         <h3
-                          className="mb-4 mt-9 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
+                          className="mb-4 mt-9 text-xl text-h1subtitle dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
                           key={key}
                         >
                           {children}

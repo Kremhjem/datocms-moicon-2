@@ -279,6 +279,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
               case 'feature_list':
                 return (
                   <FeatureListSelector
+                    toptext={pricingSectionRecord.pricingSectionToptext}
                     header={pricingSectionRecord.pricingSectionHeader}
                     subheader={pricingSectionRecord.pricingSectionSubheader}
                     plans={pricingSectionRecord.plans}

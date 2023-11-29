@@ -154,6 +154,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
       ... on PricingSectionRecord {
         _modelApiKey
         id
+        pricingSectionToptext
         pricingSectionHeader
         pricingSectionSubheader
         displayOption

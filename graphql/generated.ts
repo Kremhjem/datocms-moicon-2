@@ -3391,6 +3391,7 @@ export type PricingSectionRecord = RecordInterface & {
   displayOption: Scalars['String']['output'];
   id: Scalars['ItemId']['output'];
   plans: Array<PricingTierRecord>;
+  pricingSectionToptext: Scalars['String']['output'];
   pricingSectionHeader: Scalars['String']['output'];
   pricingSectionSubheader?: Maybe<Scalars['String']['output']>;
 };

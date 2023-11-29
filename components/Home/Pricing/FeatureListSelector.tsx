@@ -23,9 +23,9 @@ const FeatureListSelector = ({ toptext, header, subheader, plans }: Props) => {
   return (
     <div className="mt-14 bg-language py-16 dark:bg-gray-900">
       <div className="container mx-auto px-6 py-8">
-        <div>
-          <p className="text-sm">{toptext || ''}</p>
-        </div>
+        <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
+          {toptext}
+        </h1>
         <h1 className="text-center text-2xl lowercase text-h1title dark:text-white lg:text-3xl">
           {header}
         </h1>

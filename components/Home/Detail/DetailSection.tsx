@@ -57,7 +57,7 @@ const DetailSection = ({ details, image, imagePosition }: Props) => {
                     renderNodeRule(isParagraph, ({ children, key }) => {
                       return (
                         <p
-                          className="text-base text-h1subtitle sm:text-lg"
+                          className="text-base text-h1subtitle"
                           key={key}
                         >
                           {children}
@@ -81,7 +81,7 @@ const DetailSection = ({ details, image, imagePosition }: Props) => {
                       return (
                         <div
                           key={key}
-                          className="mb-6 mt-6 grid w-full grid-cols-2 gap-4 text-center lg:ml-0"
+                          className="mb-6 mt-6 grid w-full grid-cols-1 gap-4 lg:ml-0"
                         >
                           {children}
                         </div>

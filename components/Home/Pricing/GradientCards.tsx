@@ -19,9 +19,11 @@ const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
     <div className="bg-language mt-14 py-16">
       <div className="mx-auto flex flex-col justify-center px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
-            {toptext || ''}
-          </h2>
+          {toptext &&
+              <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
+                {toptext}
+              </h2>
+          }
           <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
             {header}
           </h2>

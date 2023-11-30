@@ -55,8 +55,8 @@ const FeatureCards = ({
             })}
           </div>
             {/* Section header */}
-            <div className="flex mx-auto px-6 pt-24 gap-6">
-                <div className="flex flex-col rounded-lg overflow-hidden w-2/3">
+            <div className="flex mx-auto px-6 pt-24 gap-16">
+                <div className="flex flex-col rounded-lg overflow-hidden w-3/4">
                     <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
                         <span className="pt-1 text-browser">←</span>
                         <span className="pt-1 text-browser">→</span>
@@ -72,7 +72,7 @@ const FeatureCards = ({
                         <img src="https://www.datocms-assets.com/109265/1700804240-app-0001-12.jpg" alt="Description of Image"/>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center text-center w-1/3">
+                <div className="flex flex-col justify-center w-1/3">
                     <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
                         {featuresHeader}
                     </h1>

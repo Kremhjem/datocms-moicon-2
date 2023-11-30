@@ -28,6 +28,7 @@ const BrandCards = ({ brandShowcase }: Props) => {
                   alt={brand.brandLogo.alt || 'Logo'}
                   width={300}
                   height={300}
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </div>
             );

@@ -20,7 +20,7 @@ const Footer = ({ data, lng }: Props) => {
   return (
     <footer className="relative z-10 mx-auto flex w-full flex-col items-center justify-center bg-graysplitbg pt-16 text-center md:text-start lg:pt-24">
       <div className="container w-full">
-        <div className="flex w-full flex-col justify-between md:flex-row md:px-16">
+        <div className="flex mx-auto max-w-6xl flex-col justify-between md:flex-row md:px-16">
           <div className="w-full">
             <div className="mx- mb-12 lg:mb-16">
               <Link href={'/' + lng + '/home'} className="mb-8 inline-block">
@@ -34,7 +34,7 @@ const Footer = ({ data, lng }: Props) => {
                   />
                 )}
               </Link>
-              <div className="mb-9 text-base font-medium leading-relaxed text-body-color">
+              <div className="mb-9 text-base font-medium leading-relaxed text-h1subtitle">
                 <ReactMarkdown>
                   {data.layout!.footerSubtitle || ''}
                 </ReactMarkdown>
@@ -59,7 +59,7 @@ const Footer = ({ data, lng }: Props) => {
           <div className="flex w-full md:text-end">
             <div className="w-full">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl text-h1title dark:text-white">
                   Legal
                 </h2>
                 <ul>
@@ -69,7 +69,7 @@ const Footer = ({ data, lng }: Props) => {
                       <li key={pageLink.id}>
                         <a
                           href={'/' + lng + '/legal/' + pageLink.slug}
-                          className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                          className="mb-4 inline-block text-base font-medium text-h1subtitle hover:text-primary"
                         >
                           {' '}
                           {pageLink.title}{' '}

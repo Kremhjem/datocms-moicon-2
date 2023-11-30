@@ -20,7 +20,7 @@ const FullImageFeaturedPosts = ({
 }: BlogProps) => {
   return (
     <div className="bg-gray2splitbg py-6 sm:py-8 lg:py-12">
-      <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div className="mx-auto max-w-6xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
           <h2 className="mb-4 lowercase text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl">
             {blogHeader}

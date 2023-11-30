@@ -7,7 +7,7 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { PricingTierRecord } from '@/graphql/generated';
 
 type Props = {
-  toptext: string;
+  toptext: Maybe<string>;
   header: string;
   subheader: Maybe<string>;
   plans: PricingTierRecord[];

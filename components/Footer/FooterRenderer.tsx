@@ -29,8 +29,8 @@ const Footer = ({ data, lng }: Props) => {
                     src={data.layout.footerLogo.url}
                     alt="logo"
                     className="w-full"
-                    width={data.layout.footerLogo.width || 100}
-                    height={data.layout.footerLogo.height || 100}
+                    width={112}
+                    height={34}
                   />
                 )}
               </Link>

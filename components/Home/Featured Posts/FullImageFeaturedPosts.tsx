@@ -26,7 +26,7 @@ const FullImageFeaturedPosts = ({
             {blogHeader}
           </h2>
 
-          <div className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+          <div className="max-w-screen-md text-h1subtitle md:text-lg">
             <ReactMarkdown>{blogSubheader || ''}</ReactMarkdown>
           </div>
         </div>

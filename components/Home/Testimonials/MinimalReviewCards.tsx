@@ -19,22 +19,22 @@ const MinimalReviewCards = ({ reviews, header, subheader }: Props) => {
           {header}
         </h2>
 
-        <div className="grid gap-4 md:grid-cols-3 md:gap-8">
+        <div className="grid gap-4 md:grid-cols-4 md:gap-6">
           {reviews.map((review) => {
             return (
               <div
                 key={review.id}
-                className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray2splitbg px-8 py-6 md:gap-6"
+                className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray2splitbg px-4 py-6 md:gap-6"
               >
-                <div className="max-w-md text-center text-white lg:text-lg">
+                <div className="max-w-md text-white lg:text-md">
                   <StructuredText
                     data={review.review.value}
                     renderNode={Highlighter}
                   />
                 </div>
 
-                <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-                  <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14">
+                <div className="flex flex-col items-start gap-2 sm:flex-row md:gap-3">
+                  <div className="relative h-12 w-12 overflow-hidden rounded-md border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14">
                     <DatoImage
                       layout="fill"
                       objectFit="cover"
@@ -44,10 +44,10 @@ const MinimalReviewCards = ({ reviews, header, subheader }: Props) => {
                   </div>
 
                   <div>
-                    <div className="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base">
+                    <div className="text-sm font-bold text-indigo-50 sm:text-left md:text-base">
                       {review.reviewerName}
                     </div>
-                    <p className="text-center text-sm text-indigo-200 sm:text-left md:text-sm">
+                    <p className="text-xs max-w-3/4 text-h1subtitle">
                       {review.reviewerTitle}
                     </p>
                   </div>

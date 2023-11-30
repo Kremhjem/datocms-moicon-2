@@ -86,6 +86,9 @@ module.exports = {
       },
       width: {
         '3/4': '75%',
+      },
+      maxWidth: {
+        '3/4': '75%',
       }
     },
   },

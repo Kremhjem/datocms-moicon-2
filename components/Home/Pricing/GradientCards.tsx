@@ -5,7 +5,7 @@ import { StructuredText } from 'react-datocms/structured-text';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 type Props = {
-  toptext: string;
+  toptext: Maybe<string>;
   header: string;
   subheader: Maybe<string>;
   plans: PricingTierRecord[];

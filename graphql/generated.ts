@@ -3393,6 +3393,7 @@ export type PricingSectionRecord = RecordInterface & {
   plans: Array<PricingTierRecord>;
   pricingSectionHeader: Scalars['String']['output'];
   pricingSectionSubheader?: Maybe<Scalars['String']['output']>;
+  pricingSectionSubheaderCopy1?: Maybe<Scalars['String']['output']>;
   pricingSectionToptext?: Maybe<Scalars['String']['output']>;
 };
 
@@ -3405,6 +3406,12 @@ export type PricingSectionRecord_SeoMetaTagsArgs = {
 
 /** Block of type 💰 Pricing section (pricing_section) */
 export type PricingSectionRecordPricingSectionSubheaderArgs = {
+  markdown?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+/** Block of type 💰 Pricing section (pricing_section) */
+export type PricingSectionRecordPricingSectionSubheaderCopy1Args = {
   markdown?: InputMaybe<Scalars['Boolean']['input']>;
 };
 

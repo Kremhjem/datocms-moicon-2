@@ -25,7 +25,7 @@ const FeatureCards = ({
       <div className="relative mx-auto max-w-6xl py-32">
         <div className="flex flex-col gap-16">
           {/* Items */}
-          <div className="mx-auto grid max-w-sm items-start gap-16 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto grid max-w-sm items-start gap-20 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
               {features.map((feature) => {
               return (

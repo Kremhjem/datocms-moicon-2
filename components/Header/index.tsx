@@ -200,9 +200,9 @@ const Header = ({ lng, data }: Props) => {
                       </li>
                     ))}
                     <span className="text-h1subtitle">•</span>
-                    <a href="https://www.linkedin.com/company/11811767" className="mb-1 ml-2 bg-cardbg hover:bg-browser text-h1subtitle px-1 py-1 rounded-full border-solid border-2 border-h1subtitle">
+                    <a href="https://www.linkedin.com/company/11811767" className="mb-1 ml-2 bg-h1subtitle hover:bg-browser text-menugray px-1 py-1 rounded">
 
-                      <LinkedinIcon size={13} strokeWidth={3} />
+                      <LinkedinIcon size={13} strokeWidth={4} />
 
                     </a>
                   </ul>

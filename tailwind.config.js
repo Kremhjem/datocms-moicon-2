@@ -47,6 +47,7 @@ module.exports = {
         hero: '#4a4a55',
         h1title: '#e6e6e6',
         h1subtitle: '#ccc',
+        border1: '#737373',
         browser: '#999',
         white: '#FFFFFF',
         black: '#090E34',

@@ -14,6 +14,7 @@ import {
 import NotificationStrip from './NotificationStrip';
 import { Menu } from './HeaderRenderer';
 import { isEmptyDocument } from 'datocms-structured-text-utils';
+import {LinkedinIcon} from "lucide-react";
 
 type Props = {
   lng: SiteLocale;
@@ -153,13 +154,13 @@ const Header = ({ lng, data }: Props) => {
                       : 'invisible top-[120%] opacity-0'
                   }`}
                 >
-                  <ul className="block items-center lg:flex lg:space-x-12">
+                  <ul className="block items-center lg:flex">
                     {menuData.map((menuItem, index) => (
                       <li key={menuItem.id} className="group relative">
                         {menuItem.path ? (
                           <Link
                             href={'/' + lng + menuItem.path}
-                            className={`flex py-2 text-sm text-h1subtitle group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2`}
+                            className={`flex text-base text-h1subtitle group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:px-2`}
                           >
                             {menuItem.title}
                           </Link>
@@ -198,6 +199,12 @@ const Header = ({ lng, data }: Props) => {
                         )}
                       </li>
                     ))}
+                    <span className="text-h1subtitle">•</span>
+                    <a href="https://www.linkedin.com/company/11811767" className="mb-1 ml-2 bg-cardbg hover:bg-browser text-h1subtitle px-1 py-1 rounded-full border-solid border-2 border-h1subtitle">
+
+                      <LinkedinIcon size={13} strokeWidth={3} />
+
+                    </a>
                   </ul>
                 </nav>
               </div>

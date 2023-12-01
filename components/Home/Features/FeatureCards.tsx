@@ -74,7 +74,15 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                     <div className="flex mx-auto px-6 pt-24 gap-16">
                         <div className="flex flex-col rounded-lg overflow-hidden w-3/4">
                             <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
-                                {/* Browser-like header elements */}
+                                <span className="pt-1 text-browser">←</span>
+                                <span className="pt-1 text-browser">→</span>
+                                <span className="pt-1 text-white">⟳</span>
+                                <div className="flex pl-2 pt-0.5 items-center text-browser w-full bg-gray3splitbg rounded-xl w-5/6">
+                                    ⓘ https://<span className="text-white">moicon.net</span>
+                                </div>
+                                <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                                <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
+                                <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
                             </div>
                             <div className="bg-cardbg">
                                 {/* You might want to replace this <img> with DatoImage if it's an image from DatoCMS */}

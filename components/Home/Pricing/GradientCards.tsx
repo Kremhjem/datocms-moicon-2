@@ -3,6 +3,7 @@ import { PricingTierRecord } from '@/graphql/generated';
 import { Maybe } from 'graphql/jsutils/Maybe';
 import { StructuredText } from 'react-datocms/structured-text';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import Contact from '@/components/Contact/Contact'
 
 type Props = {
   toptext: Maybe<string>;
@@ -22,6 +23,9 @@ const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
           <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
             {toptext || ''}
           </h2>
+          <div className='flex flex-col items-center justify-center pb-12'>
+            <Contact />
+          </div>
           <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
             {header}
           </h2>

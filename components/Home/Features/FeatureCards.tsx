@@ -24,7 +24,8 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                                                        featuresHeader,
                                                        featuresSubheader,
                                                    }) => {
-    const renderListItem: React.FC<ListItemProps> = ({ children }) => (
+    // Define `renderListItem` to match the expected `li` type
+    const renderListItem = ({ children }: ListItemProps) => (
         <li className="flex py-2">
             <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
                 <CheckIcon />
@@ -32,7 +33,6 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
             {children}
         </li>
     );
-
     return (
         <section className="relative bg-darksplitbg z-0">
             {/* Section background (needs .relative class on parent and next sibling elements) */}

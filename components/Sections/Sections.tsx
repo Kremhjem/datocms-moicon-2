@@ -264,6 +264,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
                 return (
                   <GradientCards
                     toptext={pricingSectionRecord.pricingSectionToptext}
+                    ctatext={pricingSectionRecord.pricingSectionCtatext}
                     header={pricingSectionRecord.pricingSectionHeader}
                     subheader={pricingSectionRecord.pricingSectionSubheader}
                     plans={pricingSectionRecord.plans}

@@ -7,12 +7,13 @@ import Contact from '@/components/Contact/Contact'
 
 type Props = {
   toptext: Maybe<string>;
+  ctatext: Maybe<string>;
   header: string;
   subheader: Maybe<string>;
   plans: PricingTierRecord[];
 };
 
-const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
+const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) => {
   const planInEvidence = plans.shift() as PricingTierRecord;
   const evidencePlanFeatures = planInEvidence.planFeatures.split(', ');
 
@@ -26,6 +27,7 @@ const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
           <div className="mx-auto grid max-w-sm items-start gap-20 md:max-w-2xl md:grid-cols-2 lg:max-w-none">
             <div className='flex flex-col items-center justify-center pb-12 text-h1subtitle text-xl'>
               Experience the advantages of factory planning & factory operations with Moicon.
+              <div className="">{ctatext || ''}</div>
             </div>
             <div className='flex flex-col justify-center pb-20'>
               <Contact />

@@ -18,13 +18,18 @@ const GradientCards = ({ toptext, header, subheader, plans }: Props) => {
 
   return (
     <div className="bg-language mt-14 py-16">
-      <div className="mx-auto flex flex-col justify-center px-4 md:px-8">
+      <div className="mx-auto max-w-6xl flex flex-col justify-center px-6">
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
+          <h2 className="flex flex-col mb-4 text-2xl text-h1title md:mb-6 lg:text-3xl">
             {toptext || ''}
           </h2>
-          <div className='flex flex-col items-center justify-center pb-12'>
-            <Contact />
+          <div className="mx-auto grid max-w-sm items-start gap-20 md:max-w-2xl md:grid-cols-2 lg:max-w-none">
+            <div className='flex flex-col items-center justify-center pb-12 text-h1subtitle text-xl'>
+              Experience the advantages of factory planning & factory operations with Moicon.
+            </div>
+            <div className='flex flex-col justify-center pb-20'>
+              <Contact />
+            </div>
           </div>
           <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
             {header}

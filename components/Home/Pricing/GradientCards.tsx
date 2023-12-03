@@ -25,8 +25,8 @@ const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) =>
             {toptext || ''}
           </h2>
           <div className="mx-auto grid max-w-sm items-start gap-20 md:max-w-2xl md:grid-cols-2 lg:max-w-none">
-            <div className='flex flex-col items-center justify-center pb-12 text-h1subtitle text-xl'>
-              <div className="">{ctatext || ''}</div>
+            <div className='flex flex-col items-center justify-center pb-12'>
+              <ReactMarkdown className='prose text-white text-xl'>{ctatext || ''}</ReactMarkdown>
             </div>
             <div className='flex flex-col justify-center pb-20'>
               <Contact />

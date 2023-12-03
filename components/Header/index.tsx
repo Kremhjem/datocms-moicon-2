@@ -14,7 +14,8 @@ import {
 import NotificationStrip from './NotificationStrip';
 import { Menu } from './HeaderRenderer';
 import { isEmptyDocument } from 'datocms-structured-text-utils';
-import {LinkedinIcon} from "lucide-react";
+import {TwitterIcon, YoutubeIcon} from "lucide-react";
+import LinkedinFollowCompany from '@/components/LinkedinFollow/LinkedinFollowCompany';
 
 type Props = {
   lng: SiteLocale;
@@ -200,11 +201,15 @@ const Header = ({ lng, data }: Props) => {
                       </li>
                     ))}
                     <span className="text-h1subtitle">•</span>
-                    <a href="https://www.linkedin.com/company/11811767" className="mb-1 ml-2 bg-h1subtitle hover:bg-browser text-menugray px-1 py-1 rounded">
-
-                      <LinkedinIcon size={13} strokeWidth={4} />
-
+                    <a href="https://twitter.com/moicondotnet?lang=en" className="mb-1 ml-2 bg-h1subtitle hover:bg-browser text-menugray px-1 py-1 rounded">
+                      <TwitterIcon size={13} strokeWidth={3} />
                     </a>
+                    <a href="https://www.youtube.com/channel/UCWkcXCXvsmeYjJDR274cEnw" className="mb-1 ml-2 bg-h1subtitle hover:bg-browser text-menugray px-1 py-1 rounded">
+                      <YoutubeIcon size={13} strokeWidth={3} />
+                    </a>
+                    <div className="scale-75 h-8 w-24 ml-4 md:scale-100">
+                      <LinkedinFollowCompany companyId={11811767} counter='right' />
+                    </div>
                   </ul>
                 </nav>
               </div>

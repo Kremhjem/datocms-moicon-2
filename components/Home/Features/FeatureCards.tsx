@@ -41,7 +41,7 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                 aria-hidden="true"
             ></div>
 
-            <div className="relative mx-auto max-w-6xl py-32">
+            <div className="relative mx-auto max-w-6xl pt-32 pb-24">
                 <div className="flex flex-col gap-16">
                     {/* Items */}
                     <div className="mx-auto grid max-w-sm items-start gap-20 px-6 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3">
@@ -71,8 +71,8 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                         ))}
                     </div>
                     {/* Section header */}
-                    <div className="flex mx-auto px-6 pt-24 gap-16">
-                        <div className="flex flex-col rounded-lg overflow-hidden w-3/4">
+                    <div className="flex mx-auto px-6 pt-24 gap-24">
+                        <div className="flex flex-col rounded-lg overflow-hidden w-2/3">
                             <div className="flex items-center relative px-3 py-1 bg-darksplitbg gap-2">
                                 <span className="pt-1 text-browser">←</span>
                                 <span className="pt-1 text-browser">→</span>

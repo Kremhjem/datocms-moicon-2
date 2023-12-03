@@ -29,7 +29,7 @@ const Contact: FC = () => {
                 <input
                     type='text'
                     placeholder='Full Name'
-                    className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+                    className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-purple-500'
                     {...register('name', { required: true })}
                 />
             </div>
@@ -43,7 +43,7 @@ const Contact: FC = () => {
                 <input
                     type='email'
                     placeholder='example@domain.com'
-                    className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+                    className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-purple-500'
                     {...register('email', { required: true })}
                 />
             </div>
@@ -57,12 +57,12 @@ const Contact: FC = () => {
                 <textarea
                     rows={4}
                     placeholder='Type your message'
-                    className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+                    className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-purple-500'
                     {...register('message', { required: true })}
                 ></textarea>
             </div>
             <div>
-                <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+                <button className='hover:shadow-form hover:bg-purple-600 rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
                     Submit
                 </button>
             </div>

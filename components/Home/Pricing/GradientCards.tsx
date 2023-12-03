@@ -28,31 +28,31 @@ const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) =>
             <div className='flex flex-col items-center justify-center pb-12'>
               <ReactMarkdown className='prose text-white text-xl'>{ctatext || ''}</ReactMarkdown>
             </div>
-            <div className='flex flex-col justify-center pb-20'>
+            <div className='flex flex-col justify-center pb-10'>
               <Contact />
             </div>
           </div>
-          <h2 className="mb-4 text-center text-2xl text-h1title md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-2xl text-h1title md:mb-6 lg:text-3xl">
             {header}
           </h2>
 
-          <div className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+          <div className="max-w-screen-md text-gray-500 md:text-lg">
             <ReactMarkdown>{subheader || ''}</ReactMarkdown>
           </div>
         </div>
 
-        <div className="flex w-full flex-row flex-wrap items-center justify-center gap-4">
-          <div className="relative mr-4 flex h-[700px] max-w-md flex-col justify-center rounded-lg bg-gradient-to-tr from-indigo-500 to-primary/80 p-8 shadow-xl">
+        <div className="flex w-full flex-row flex-wrap items-center gap-4">
+          <div className="relative mr-4 flex h-[710px] max-w-md flex-col justify-center rounded-lg bg-gradient-to-tr from-indigo-500 to-primary/80 p-8 shadow-xl">
             <div className="h-96">
               <span className="absolute right-0 top-0 order-first m-8 inline-block rounded-full bg-indigo-200 bg-opacity-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white lg:order-none">
-                Best value
+                Start Lite, Scale later
               </span>
               <div className="mb-4 flex flex-col items-start justify-between gap-4 lg:flex-row">
                 <div>
                   <h3 className="text-2xl font-semibold text-white sm:text-3xl">
                     {planInEvidence.tierName}
                   </h3>
-                  <div className="h-24 text-indigo-100">
+                  <div className="h-20 text-indigo-100">
                     <StructuredText
                       data={planInEvidence.tierDescription.value}
                       renderNode={Highlighter}
@@ -95,7 +95,7 @@ const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) =>
               href="#"
               className="block rounded-lg bg-indigo-200 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-300 focus-visible:ring active:bg-indigo-400 md:text-base"
             >
-              Get the Pro Bundle
+              Get the Lite License
             </a>
           </div>
           {plans.map((plan) => {
@@ -103,14 +103,14 @@ const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) =>
             return (
               <div
                 key={plan.id}
-                className="flex h-[700px] w-96 flex-col justify-center rounded-lg bg-gray-800 p-8"
+                className="flex h-[710px] max-w-md flex-col justify-center rounded-lg bg-gray-800 p-8"
               >
                 <div className="h-96">
                   <div className="mb-4">
                     <h3 className="text-2xl font-semibold text-gray-100 sm:text-3xl">
                       {plan.tierName}
                     </h3>
-                    <div className="h-24 text-h1subtitle">
+                    <div className="h-20 text-h1subtitle">
                       <StructuredText
                         data={plan.tierDescription.value}
                         renderNode={Highlighter}
@@ -152,7 +152,7 @@ const GradientCards = ({ toptext, ctatext, header, subheader, plans }: Props) =>
                   href="#"
                   className="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-h1subtitle md:text-base"
                 >
-                  Get the Basic Bundle
+                  Get the Enterprise Bundle
                 </a>
               </div>
             );

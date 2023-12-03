@@ -26,7 +26,7 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                                                    }) => {
     // Define `renderListItem` to match the expected `li` type
     const renderListItem = ({ children }: ListItemProps) => (
-        <li className="flex py-2">
+        <li className="flex py-1.5 items-center">
             <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
                 <CheckIcon />
             </span>
@@ -93,7 +93,7 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                             <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">
                                 {featuresHeader}
                             </h1>
-                            <div className="text-lg text-h1subtitle">
+                            <div className="text-md text-h1subtitle">
                                 <ReactMarkdown components={{ li: renderListItem }}>
                                     {featuresSubheader || ''}
                                 </ReactMarkdown>

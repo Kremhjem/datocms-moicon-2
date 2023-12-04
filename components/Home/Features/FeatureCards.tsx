@@ -1,7 +1,10 @@
-import { FeatureRecord } from '@/graphql/generated';
+"use client"
+import {FeatureRecord, FileField} from '@/graphql/generated';
 import { Maybe } from 'graphql/jsutils/Maybe';
 import { Image as DatoImage } from 'react-datocms';
 import ReactMarkdown from 'react-markdown';
+import MuxPlayer from "@mux/mux-player-react";
+
 
 const CheckIcon: React.FC = () => (
     <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -15,7 +18,7 @@ interface ListItemProps {
 
 interface FeatureCardsProps {
     features: FeatureRecord[];
-    featuresVideo: Maybe<string>;
+    featuresVideo: Maybe<FileField>;
     featuresHeader: string;
     featuresSubheader: Maybe<string>;
 }
@@ -86,9 +89,12 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                                 <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
                                 <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
                             </div>
-                            <div className="bg-cardbg">
-                                {featuresVideo || ''}
-                            </div>
+                            {featuresVideo?.video?.muxPlaybackId && <div className="bg-cardbg text-white">
+                                <MuxPlayer
+                                    streamType="on-demand"
+                                    playbackId={featuresVideo.video.muxPlaybackId}
+                                />
+                            </div>}
                         </div>
                         <div className="flex flex-col justify-center w-1/3">
                             <h1 className="mb-4 text-3xl font-light !leading-tight text-h1title dark:text-white sm:text-4xl md:text-4xl lowercase">

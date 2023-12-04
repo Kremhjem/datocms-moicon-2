@@ -1,11 +1,11 @@
 export default function Head() {
   return (
     <>
-      <title>Landing page DatoCMS Starter</title>
+      <title>Moicon Digital Twin</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
-        content="Visit https://www.datocms.com/marketplace/starters for more starters"
+        content="Web based Digital Twin for manufacturers"
       />
       <link rel="icon" href="/images/favicon.ico" />
     </>

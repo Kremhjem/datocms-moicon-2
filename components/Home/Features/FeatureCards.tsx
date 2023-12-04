@@ -15,12 +15,14 @@ interface ListItemProps {
 
 interface FeatureCardsProps {
     features: FeatureRecord[];
+    featuresVideo: Maybe<string>;
     featuresHeader: string;
     featuresSubheader: Maybe<string>;
 }
 
 const FeatureCards: React.FC<FeatureCardsProps> = ({
                                                        features,
+                                                       featuresVideo,
                                                        featuresHeader,
                                                        featuresSubheader,
                                                    }) => {
@@ -85,8 +87,7 @@ const FeatureCards: React.FC<FeatureCardsProps> = ({
                                 <span className="w-2.5 h-2.5 rounded-full bg-browser"></span>
                             </div>
                             <div className="bg-cardbg">
-                                {/* You might want to replace this <img> with DatoImage if it's an image from DatoCMS */}
-                                <img src="https://www.datocms-assets.com/109265/1700804240-app-0001-12.jpg" alt="Description of Image"/>
+                                {featuresVideo || ''}
                             </div>
                         </div>
                         <div className="flex flex-col justify-center w-1/3">

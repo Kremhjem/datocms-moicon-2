@@ -826,6 +826,7 @@ export type FeatureListSectionRecord = RecordInterface & {
   feature: Array<FeatureRecord>;
   featuresHeader: Scalars['String']['output'];
   featuresSubheader?: Maybe<Scalars['String']['output']>;
+  featuresVideo?: Maybe<FileField>;
   id: Scalars['ItemId']['output'];
 };
 

@@ -176,6 +176,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
                 return (
                   <FeatureCards
                     features={featureListSectionRecord.feature}
+                    featuresVideo={featureListSectionRecord.featuresVideo}
                     featuresHeader={featureListSectionRecord.featuresHeader}
                     featuresSubheader={
                       featureListSectionRecord.featuresSubheader

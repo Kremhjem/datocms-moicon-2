@@ -236,6 +236,11 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
             }
           }
         }
+        featuresVideo {
+          video {
+            muxPlaybackId
+          }
+        }
       }
       ... on AllPostsSectionRecord {
         id

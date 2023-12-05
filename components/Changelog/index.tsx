@@ -13,13 +13,13 @@ type Props = {
 const Changelog = ({ title, subtitle, featuredChangeLogs, locale }: Props) => {
   return (
     <section>
-      <div className=" mx-auto flex flex-col items-center px-5 py-40">
-        <div className="prose mb-20 flex w-full flex-col text-center">
+      <div className="mx-auto flex flex-col items-center px-5 py-28">
+        <div className="mb-10 flex w-full flex-col text-center">
           <div className="mx-auto w-full">
-            <h1 className="mb-16 mt-4 text-4xl font-semibold leading-5">
+            <h1 className="mb-10 mt-4 text-3xl text-h1title leading-5">
               {title}
             </h1>
-            <div>
+            <div className="text-h1subtitle">
               <ReactMarkdown>{subtitle || ''}</ReactMarkdown>
             </div>
           </div>

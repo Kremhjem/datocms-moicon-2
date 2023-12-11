@@ -100,11 +100,11 @@ const Header = ({ lng, data }: Props) => {
         className={`header left-0 z-40 flex w-full items-center bg-menugray ${
           sticky
             ? 'fixed top-0 z-50 bg-menugray bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
-            : `absolute ${notificationStrip ? 'top-0' : 'top-0'}`
+            : `fixed ${notificationStrip ? 'top-0' : 'top-0'}`
         }`}
       >
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
+          <div className="relative flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12 xl:py-0 py-2">
               <Link
                 href={'/' + lng}

@@ -25,7 +25,11 @@ export default async function RootLayout({
   return (
     <html lang={lng}>
       <Head />
-      <body className={`tracking-tight antialiased bg-darksplitbg`}>{children}</body>
+      <body className={`tracking-tight antialiased bg-darksplitbg`}>
+      <div className="h-93 w-full fixed overflow-y-scroll mt-14">
+      {children}
+      </div>
+      </body>
     </html>
   );
 }

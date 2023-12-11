@@ -16,7 +16,7 @@ const BackgroundImageHero = ({
   image,
 }: Props) => {
   return (
-    <div className="pt-14 h-full mx-auto relative">
+    <div className="mx-auto relative">
         <div
             className="bg-custom-gradient relative pt-16 pb-72 md:pt-28 md:pb-0 md:pl-0 md:pr-0"
             style={{
@@ -35,7 +35,7 @@ const BackgroundImageHero = ({
           <h1 className="text-5xl-inherit font-medium text-hero custom-filter tracking-widester leading-6 sm:leading-normal sm:text-7-75xl md:relative top-10">
               {heroTitle}
           </h1>
-          <div className="text-h1subtitle lowercase text-center text-2xl md:text-left md:w-4/5 xl:text-3xl">
+          <div className="text-h1subtitle lowercase text-center text-2xl md:text-left xl:text-2xl">
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex gap-4">

@@ -82,6 +82,9 @@ module.exports = {
       spacing: {
         '46rem': '46rem',
       },
+      height: {
+        '93': '93%',
+      },
       maxHeight: {
         '30': '30rem',
       },
@@ -90,7 +93,20 @@ module.exports = {
       },
       maxWidth: {
         '3/4': '85%',
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#ccc',
+            a: {
+              color: '#e6e6e6',
+              '&:hover': {
+                color: '#2c5282',
+              },
+            },
+          },
+        },
+      },
     },
   },
   plugins: [

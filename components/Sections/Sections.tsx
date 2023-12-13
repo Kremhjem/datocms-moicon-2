@@ -192,8 +192,6 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
                 videoHeader={videoSectionRecord.videoHeader}
                 videoSubheader={videoSectionRecord.videoSubheader}
                 video={videoSectionRecord.video}
-                videoThumbnail={videoSectionRecord.videoThumbnail}
-                videoProvider={videoSectionRecord.video?.provider}
               />
             );
           case 'brand_section':

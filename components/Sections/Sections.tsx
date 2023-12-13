@@ -191,7 +191,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
               <Video
                 videoHeader={videoSectionRecord.videoHeader}
                 videoSubheader={videoSectionRecord.videoSubheader}
-                videoUid={videoSectionRecord.video?.providerUid}
+                video={videoSectionRecord.video}
                 videoThumbnail={videoSectionRecord.videoThumbnail}
                 videoProvider={videoSectionRecord.video?.provider}
               />

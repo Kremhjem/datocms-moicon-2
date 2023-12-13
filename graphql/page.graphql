@@ -105,13 +105,8 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
         videoHeader
         videoSubheader
         video {
-          providerUid
-          provider
-          thumbnailUrl
-        }
-        videoThumbnail {
-          responsiveImage {
-            ...DatoImage_responsiveImage
+          video {
+            muxPlaybackId
           }
         }
       }
